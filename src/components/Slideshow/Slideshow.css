@@ -1,0 +1,20 @@
+.Slideshow {
+  height: 340px;
+  position: relative;
+  width: 510px;
+}
+.Slideshow div.image {
+  background: #FF0000 url('./images/mainimage1.jpg') no-repeat;
+  background-size: cover;
+  height: 100%;
+  position: absolute;
+  transition: opacity 2s, filter 500ms;
+  width: 100%;
+}
+.Slideshow .image.front {
+  opacity: 1;
+}
+.Slideshow .image.back {
+  opacity: 0;
+  filter: brightness(10) blur(20px);
+}

@@ -1,0 +1,61 @@
+.Facility {
+  position: relative;
+  margin: 0;
+}
+.Facility h1 {
+  font-size: 45px;
+  letter-spacing: 1.5px;
+}
+.Facility h2 {
+  display: block;
+  margin: 40px 0;
+  z-index: 1;
+}
+.Facility ul {
+  list-style: disc;
+}
+
+.Facility .blackBox {
+  padding: 0 30px 30px 30px;
+}
+
+.Facility .blackBox td {
+  color: rgba(255,255,255,0.9);
+  font-family: 'Verdana', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  letter-spacing: 0;
+  line-height: 17px;
+  opacity: 1;
+  padding: 0 30px;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0;
+  text-transform: none;
+  vertical-align: top;
+  width: 400px;
+}
+
+.Facility .gallery {
+  text-align: center;
+}
+
+.Facility .gallery div {
+  text-align: center;
+  font-weight: bold;
+  color: #f8f8ff;
+  display: inline-block;
+  padding: 20px;
+}
+
+.Facility .gallery div a {
+  display: block;
+  border: 1px solid rgba(28,115,229,0.5);
+}
+
+.Facility .gallery>img[src] {
+  border: 1px solid #FFF;
+  width: 100%;
+}

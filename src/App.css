@@ -1,0 +1,182 @@
+@import url("http://fonts.googleapis.com/css?family=Rokkitt");
+@import url("http://fonts.googleapis.com/css?family=Rokkitt");
+@import url("http://fonts.googleapis.com/css?family=Rokkitt");
+html, body, #root {
+  min-height: 100vh;
+}
+ol, ul {
+  list-style: none;
+}
+html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  -webkit-font-smoothing: antialiased;
+  border: 0;
+  color: #ffffff;
+  font-family: "Rokkitt", Helvetica;
+  font-size: 100%;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+h1 {
+  font-size: 45px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+#root {
+  background: #000 url(_img/bg.jpg) no-repeat fixed center top;
+}
+
+.App {
+  border: 0;
+  color: #FFFFFF;
+  font: normal normal 12px/15px 'Verdana', sans-serif;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 0;
+  overflow-x: hidden;
+  width: 900px;
+}
+
+#content {
+  position: relative;
+  margin: 0 0 0 28px;
+  padding: 0 0 0 24px;
+}
+
+.App-logo {
+  position: absolute;
+  top: 44px;
+  left: 26px;
+  width: 207px;
+  height: 160px;
+  background: transparent url(_img/logo.png) no-repeat center top;
+}
+
+.App-header {
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.blackBox {
+  border: 5px solid #f8f8ff;
+  background-color: rgba(0,0,0,0.85);
+  padding: 30px;
+  position: relative;
+}
+
+.siteFont {
+  -webkit-font-smoothing: antialiased;
+  font-size: 24px;
+  font-family: "Rokkitt",Helvetica;
+  font-weight: 800;
+}
+
+a {
+  text-decoration: none;
+}
+a:link {
+  color: #aed40f;
+}
+a:visited {
+  color: #aed40f;
+}
+a:active {
+  color: #aed40f;
+}
+a:hover {
+  color: #FFFFFF;
+}
+
+.primary {
+  color: #1c73e5;
+}
+a.primary:link {
+  color: #1c73e5;
+}
+a.primary:visited {
+  color: #1c73e5;
+}
+a.primary:active {
+  color: #1c73e5;
+}
+a.primary:hover {
+  color: #FFFFFF;
+}
+
+
+secondary {
+  color: #aed40f;
+}
+a.secondary:link {
+  color: #aed40f;
+}
+a.secondary:visited {
+  color: #aed40f;
+}
+a.secondary:active {
+  color: #aed40f;
+}
+a.secondary:hover {
+  color: #FFFFFF;
+}
+
+
+/* strip duplicates, cleanup and get all four pseudo classes */
+a.selected:link {
+  color: #dcdcdc;
+}
+a.selected:visited {
+  color: #dcdcdc;
+}
+a.selected:active {
+  color: #dcdcdc;
+}
+a.selected:hover {
+  color: #dcdcdc;
+}
+
+
+a.linkWhite:visited {
+  color: #dcdcdc;
+}
+a.linkWhite:link {
+  color: #dcdcdc;
+}
+a.linkWhite:hover {
+  color: #dcdcdc;
+}
+a.linkWhite:link {
+  color: #dcdcdc;
+}
