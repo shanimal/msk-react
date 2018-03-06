@@ -1,22 +1,17 @@
 .NextClass .group.nextClass {
   border: 1px solid #FFF;
   border-radius: 0.5em;
-  margin: 1em 0 0 0;
-  padding: 0 1em 1em 1em;
+  margin: 1rem 0 0 0;
+  padding: 0 1rem 1rem 1rem;
   color: #999;
   background: rgba(0,0,0,0.9);
   background: url(bg.jpg),linear-gradient(to right, #1e4b73, rgba(255,255,255,0));
 }
 
-.NextClass .group {
-  font-size: 1.3em;
-  line-height: 1.3em;
-}
-
 .NextClass .group.nextClass .section {
   color: #FFF;
   display: flex;
-  margin-top: 1em;
+  margin-top: 1rem;
   justify-content: space-evenly;
 }
 

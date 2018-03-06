@@ -3,6 +3,11 @@
   flex-direction: column;
 }
 
+#content .Home {
+  font-size: 14px;
+  line-height: 14px;
+}
+
 .Home .bottom {
   display: flex;
   flex-direction: row;
@@ -43,6 +48,10 @@
   float: right;
 }
 
+.Home .blueBox .title span {
+  color: #f8f8ff;
+}
+
 .Home .top {
   display: flex;
   flex-direction: row;
@@ -50,14 +59,12 @@
 }
 .Home .top .left {
   flex: 0;
-  width: 570px;
 }
 .Home .top .left h2 {
   margin: 0 0 0 30px;
 }
 .Home .top .left h4 {
-  font-size: 1rem;
-  margin: 0 0 1rem 0
+  margin: 0 0 0.5rem 0;
 }
 .Home .top .left .top-ad {
   background: transparent url(image-box-main.gif) no-repeat;
@@ -124,7 +131,6 @@
 }
 
 .Home .top .right .ad .body h3 {
-  font-size: 20px;
   font-weight: normal;
   letter-spacing: .8px;
   margin: 1rem 0;

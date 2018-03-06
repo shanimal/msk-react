@@ -8,10 +8,11 @@ import React, { Component } from 'react';
 import Slideshow from '../Slideshow/Slideshow';
 import { Link } from 'react-router-dom';
 
+
 class Home extends Component {
   render() {
     return (
-      <div className="Home">
+      <div className="Home main">
         <div className="top">
           <div className="left">
             <div className="top-ad">
@@ -20,7 +21,7 @@ class Home extends Component {
             <h2 className="siteFont">Senior Classes</h2>
             <Link to="classes#sf" className="linkWhite">
               <div className="bottom-ad">
-                <Link to="/classes#schedule"><img alt="" src={Seniors} /></Link>
+                <Link to="/classes#schedule"><img alt="Seniors" src={Seniors} /></Link>
                 <div className='right'>
                   <h4>Our seniors are awesome!</h4>
                   <p>Get your kicks every Tuesday and Thursday from 10:45 to 11:30am with our class designed specifically with seniors in mind. Bring a friend to cheer you on, or meet new friends that like to stay in shape.
@@ -42,14 +43,14 @@ class Home extends Component {
               <div className="body">
                 <a href="/classes#schedule">
                   <h3 className="secondary siteFont">New!!! Submission Class Every Saturday @10AM</h3>
-                  <img src={ClassesLeft} width="185" alt="" />
+                  <img src={ClassesLeft} width="185" alt="Saturday Submission Class" />
                 </a>
               </div>
             </div>
           </div>
         </div>
         <div className="bottom">
-          <div className="left blueBox ng-scope">
+          <div className="blueBox left">
             <div className="title siteFont">Welcome to Main Street Kick Boxing</div>
             <div>
               At MSK you can train to get in shape with <a href="/classes#ct">Core Fitness</a> or
@@ -66,16 +67,16 @@ class Home extends Component {
           </div>
           <div className="right blueBox">
             <div className="title siteFont">
-              <a ng-href="_img/FREE-PASS-WB.pdf" target="_blank" href="_img/FREE-PASS-WB.pdf">
+              <a target="_blank" href="_img/FREE-PASS-WB.pdf">
                 <span>One Week</span> FREE
               </a>
             </div>
             <div>
-              <a ng-href="_img/FREE-PASS-WB.pdf" target="_blank" href="_img/FREE-PASS-WB.pdf">
-                <img src={FreeWeek} alt=""/></a>
-              <p>Main Street Kicboxing is now offering a one week pass.</p>
+              <a target="_blank" href="/static/FREE-PASS-WB.pdf">
+                <img src={FreeWeek} alt="Free Week"/></a>
+              <p>MSK is now offering a one week pass.</p>
               <p>
-                <a target="_blank" href="_img/FREE-PASS-WB.pdf">
+                <a target="_blank" href="/static/FREE-PASS-WB.pdf">
                   Click Here to find out details
                   <img src={Arrow} alt="" />
                 </a>

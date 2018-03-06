@@ -1,24 +1,30 @@
 .Schedule .group .title {
-  font-size: 1rem;
   text-align: left;
-  padding: 1em 0 0.5em 0;
+  padding: 1rem 0 0.5em 0;
   border-bottom: 1px solid #1c73e5 !important;
   margin-bottom: 0.5em;
 }
 
 .Schedule .group .col1 {
-  width: 100px;
+  flex: 1 1 300px;
 }
 .Schedule .group .col2 {
-  width: 160px;
+  flex: 1 1 100%;
 }
 .Schedule .group .col3 {
-  width: 160px;
+  flex: 0 1 100%;
 }
 .Schedule .group .col4 {
-  width: 150px;
+  flex: 1 1 100%;
 }
 
 .Schedule .group span {
   display: inline-block;
+}
+
+.Schedule .scheduleSort {
+  color: #999;
+  text-align: center;
+  float: right;
+  margin-top: -2em;
 }

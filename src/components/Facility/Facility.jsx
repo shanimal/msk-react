@@ -29,11 +29,11 @@ class Page extends Component {
   render() {
     const bigImage = this.state.bigImage;
     return (
-      <div className="Facility">
+      <div className="Facility main">
         <h1 className="siteFont secondary">Facility</h1>
         <div className="middle" ng-view="" autoscroll="">
           <div className="blackBox ng-scope" ng-controller="FacilityCtrl">
-            <h3 className="primary">Features</h3>
+            <h2 className="primary">Features</h2>
             <table><tbody><tr><td>
               <ul>
                 <li>5,000 SQ FT. FULLY MIRRORED AND MATTED TRAINING AREA</li>
@@ -51,7 +51,7 @@ class Page extends Component {
                 <li>SITTING AREA FOR FRIENDS AND FAMILY</li>
               </ul>
             </td></tr></tbody></table>
-            <h3 className="primary">Gallery</h3>
+            <h2 className="primary">Gallery</h2>
             <div className="gallery" id="gallery">
               <div>
                 <a msk-selectable-link="default" href="#gallery" onClick={this.getClickHandler(bags)} title="Bags">

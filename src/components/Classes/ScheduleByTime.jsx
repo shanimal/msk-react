@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { getGroupSortedByTime } from '../../services/siteData';
+import { getGroupSortedByTime } from 'services/siteData';
 import './ScheduleByTime.css';
 
 class ScheduleByTime extends Component {
@@ -26,14 +26,13 @@ class ScheduleByTime extends Component {
       <div class="section">
         <span class="col1">{item.day.name}</span>
         <span className="col2">
-          Until {item.time.end}
+          to {item.time.end}
         </span>
         <span class="col3">
           <a href={`#${item.c}`}>
             {item.info.title}
-          </a>
+          </a> {item.desc ? `(${item.desc})` : ''}
         </span>
-        <span class="col4">{item.desc ? `(${item.desc})` : ''}</span>
       </div>
     );
   }

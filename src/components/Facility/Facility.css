@@ -2,15 +2,6 @@
   position: relative;
   margin: 0;
 }
-.Facility h1 {
-  font-size: 45px;
-  letter-spacing: 1.5px;
-}
-.Facility h2 {
-  display: block;
-  margin: 40px 0;
-  z-index: 1;
-}
 .Facility ul {
   list-style: disc;
 }
@@ -22,7 +13,6 @@
 .Facility .blackBox td {
   color: rgba(255,255,255,0.9);
   font-family: 'Verdana', sans-serif;
-  font-size: 14px;
   font-style: normal;
   font-variant: normal;
   font-weight: normal;

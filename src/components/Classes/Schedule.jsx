@@ -27,11 +27,11 @@ class Schedule extends Component {
     return (
       <div className="Schedule">
         <div className="middle">
-          <a name="top" id="top"> </a>
+          <a name="top" id="schedule"> </a>
           <h2 className="primary">Schedule</h2>
           <div className="scheduleSort sortedByDay">
             {sorts.reduce((accu, sort) => {
-              accu.push(<a className={`secondary ${sort === this.state.sort ? 'selected' : ''}`} href={`#${sort.c}`} onClick={this.getSortHandler(sort)}>{sort.name}</a>);
+              accu.push(<a className={`secondary ${sort === this.state.sort ? 'selected' : ''}`} href={`#schedule`} onClick={this.getSortHandler(sort)}>{sort.name}</a>);
               accu.push(' | ');
               return accu;
             }, []).slice(0,-1)}
