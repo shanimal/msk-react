@@ -1,6 +1,7 @@
 import './Home.css';
 import ClassesLeft from "./ads/classes_left.png";
-import FreeWeek from "./ads/free-week.png";
+import freeWeekFront from "./ads/freePassFront.png";
+import freeWeekBack from "./ads/freePassBack.png";
 import Arrow from "./arrow.png";
 import Seniors from "./ads/seniors_sm.jpg";
 import MailChimp from '../MailChimp/MailChimp.jsx';
@@ -8,9 +9,16 @@ import React, { Component } from 'react';
 import Slideshow from '../Slideshow/Slideshow';
 import { Link } from 'react-router-dom';
 
+const freeWeekSrcBack = '/static/freePassBack.pdf';
+const freeWeekSrcFront = '/static/freePassFront.pdf';
 
 class Home extends Component {
+
   render() {
+    const rand = Math.random();
+    const freeWeekSrc = rand <= 0.5 ? freeWeekSrcBack : freeWeekSrcFront;
+    const freeWeekImg = rand <= 0.5 ? freeWeekBack : freeWeekFront;
+
     return (
       <div className="Home main">
         <div className="top">
@@ -21,11 +29,11 @@ class Home extends Component {
             <h2 className="siteFont">Senior Classes</h2>
             <Link to="classes#sf" className="linkWhite">
               <div className="bottom-ad">
-                <Link to="/classes#schedule"><img alt="Seniors" src={Seniors} /></Link>
+                <img alt="Seniors" src={Seniors} />
                 <div className='right'>
                   <h4>Our seniors are awesome!</h4>
                   <p>Get your kicks every Tuesday and Thursday from 10:45 to 11:30am with our class designed specifically with seniors in mind. Bring a friend to cheer you on, or meet new friends that like to stay in shape.
-                    <div className="secondary more">More</div>
+                    <span className="secondary more">More</span>
                   </p>
                 </div>
               </div>
@@ -72,11 +80,11 @@ class Home extends Component {
               </a>
             </div>
             <div>
-              <a target="_blank" href="/static/FREE-PASS-WB.pdf">
-                <img src={FreeWeek} alt="Free Week"/></a>
+              <a target="_blank" href={freeWeekSrc}>
+                <img className="freeWeek" src={freeWeekImg} alt="Free Week"/></a>
               <p>MSK is now offering a one week pass.</p>
               <p>
-                <a target="_blank" href="/static/FREE-PASS-WB.pdf">
+                <a target="_blank" href={freeWeekSrc}>
                   Click Here to find out details
                   <img src={Arrow} alt="" />
                 </a>

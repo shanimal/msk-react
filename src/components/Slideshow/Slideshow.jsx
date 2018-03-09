@@ -28,6 +28,7 @@ class Slideshow extends Component {
         {data.map((slide, index) => {
           return (
             <div
+              key={slide.src}
               className={`image ${index === currentIndex ? 'front' : 'back'}`}
               style={{backgroundImage: `url(${slide.src})`}}
             />
