@@ -5,7 +5,6 @@ import data from './data.js';
 
 class Slideshow extends Component {
   constructor(props) {
-    console.log('DATA');
     super(props);
     this.state = {
       index: 0
@@ -20,7 +19,6 @@ class Slideshow extends Component {
     this.setState({
       index,
     });
-    console.log('setNextImage', this.state.index)
   }
   render() {
     const currentIndex = this.state.index % data.length;

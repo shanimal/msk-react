@@ -9,8 +9,18 @@ const Pricing = props => (
         <th colspan="3" className="title">Enrollment</th>
       </tr>
       <tr>
+        <td className="title"><a href="#ct" target="_self">Core Fitness</a></td>
+        <td className="time">&nbsp;</td>
+        <td className="time">50</td>
+      </tr>
+      <tr>
         <td className="title"><a href="#ko" target="_self">Kids Kickboxing</a></td>
         <td className="time">includes starter pack*</td>
+        <td className="time">100</td>
+      </tr>
+      <tr>
+        <td className="title"><a href="#sb" target="_self">MMA</a></td>
+        <td className="time">&nbsp;</td>
         <td className="time">100</td>
       </tr>
       <tr>
@@ -18,15 +28,7 @@ const Pricing = props => (
         <td className="time">&nbsp;</td>
         <td className="time">100</td>
       </tr>
-      <tr>
-        <td className="title"><a href="#ct" target="_self">Core Fitness</a></td>
-        <td className="time">&nbsp;</td>
-        <td className="time">100</td>
-      </tr>
-      <tr>
-        <td colspan="3">&nbsp;</td>
-      </tr>
-      <tr>
+       <tr>
         <td className="title"><a href="#sf" target="_self">Super Seniors</a></td>
         <td colspan="2" className="time superseniors">Inquire About the "Super Senior Deal"</td>
       </tr>
@@ -34,18 +36,31 @@ const Pricing = props => (
         <th colspan="3" className="title">Monthly</th>
       </tr>
       <tr>
-        <td className="title"><a href="#ko" target="_self">Kids Kickboxing</a></td>
-        <td className="time">&nbsp;</td>
+        <td className="title"><a href="#ct" target="_self">Core Fitness</a></td>
+        <td className="time">all inclusive**</td>
         <td className="time">75</td>
       </tr>
       <tr>
-        <td className="title"><a href="#ct" target="_self">Core Fitness</a></td>
-        <td className="time">all inclusive**</td>
-        <td className="time">125</td>
+        <td className="title"><a href="#ko" target="_self">Kids Kickboxing</a></td>
+        <td className="time">&nbsp;</td>
+        <td className="time">100</td>
+      </tr>
+      <tr>
+        <td className="title"><a href="#sb" target="_self">MMA</a></td>
+        <td className="time"></td>
+        <td className="time">150</td>
+      </tr>
+      <tr>
+        <td className="title"><a href="#sb" target="_self">Muay Thai/ Boxing</a></td>
+        <td className="time"></td>
+        <td className="time">100</td>
       </tr>
       <tr>
         <td className="title"><a href="#sf" target="_self">Super Seniors</a></td>
         <td colspan="2" className="time superseniors">Inquire About the "Super Senior Deal"</td>
+      </tr>
+      <tr>
+        <td colspan="3">&nbsp;</td>
       </tr>
       <tr>
         <td colspan="3">

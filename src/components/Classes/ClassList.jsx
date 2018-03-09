@@ -17,7 +17,7 @@ class ClassList extends Component {
     if (cls.live) {
       return (
         <div className="p1">
-          <a name={cls.c} id={cls.c}></a>
+          <a name={cls.c} id={cls.c}>&nbsp;</a>
           <h2 className="secondary">{cls.title}</h2>
           <p dangerouslySetInnerHTML={{ __html: cls.detail }} />
         </div>

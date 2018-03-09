@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { getSortedSchedule } from '../../services/siteData';
 import ScheduleByDay from './ScheduleByDay';
 import ScheduleByName from './ScheduleByTitle';
 import ScheduleByTime from './ScheduleByTime';
