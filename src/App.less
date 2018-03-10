@@ -1,0 +1,146 @@
+/* Copyright Mainstreet Kickboxing 2018 All Rights Reserved */
+@font-face {
+  font-family: 'Rokkitt';
+  font-style: normal;
+  font-weight: 400;
+  src:
+          local('Rokkitt Regular'),
+          local('Rokkitt-Regular'),
+          url(http://fonts.gstatic.com/s/rokkitt/v12/qFdE35qfgYFjGy5hkEaCcw.ttf)
+          format('truetype');
+}
+#root, body, html {
+  min-height: 100vh;
+}
+ol, ul {
+  list-style: none;
+}
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas,
+caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption,
+figure, footer, form, header, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav,
+object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary,
+sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+a {
+  text-decoration: none;
+  &:link { color: #aed40f; }
+  &:visited { color: #aed40f; }
+  &:active { color: #aed40f; }
+  &:hover { color: #FFFFFF; }
+}
+body {
+  background-color: #000;
+  background: #000 url('_img/bg.jpg') no-repeat fixed center top;
+}
+h1, h2, h3, h4, h5, h6 {
+  -webkit-font-smoothing: antialiased;
+  border: 0;
+  color: #ffffff;
+  font-family: "Rokkitt", Helvetica;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  padding: 0;
+  vertical-align: baseline;
+}
+h1 {
+  font-size: 45px;
+}
+h2 {
+  font-size: 28px;
+}
+h3, h4 {
+  font-weight: normal;
+  letter-spacing: .8px;
+  text-transform: UPPERCASE;
+}
+h3 {
+  font-size: 20px;
+}
+h4 {
+  font-size: 16px;
+}
+.App {
+  border: 0;
+  color: #FFFFFF;
+  font: normal normal 12px/15px 'Verdana', sans-serif;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 0;
+  overflow-x: hidden;
+  width: 900px;
+}
+#content {
+  font-size: 1rem;
+  margin: 0 0 0 28px;
+  padding: 0 0 0 50px;
+  position: relative;
+  margin: 0 auto;
+  vertical-align: top;
+  text-align: left;
+  line-height: 21px;
+  .main {
+    width: 800px;
+  }
+}
+.App-logo {
+  position: absolute;
+  top: 44px;
+  left: 26px;
+  width: 207px;
+  height: 160px;
+  background: transparent url(_img/logo_opt.png) no-repeat center top;
+}
+.App-header {
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+.blackBox {
+  border: 5px solid #f8f8ff;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 30px;
+  position: relative;
+}
+
+.linkWhite {
+  a&:visited { color: #dcdcdc; }
+  a&:link { color: #dcdcdc; }
+  a&:hover { color: #dcdcdc; }
+  a&:link { color: #dcdcdc; }
+}
+
+.primary {
+  color: #1c73e5;
+  a&:link { color: #1c73e5; }
+  a&:visited { color: #1c73e5; }
+  a&:active { color: #1c73e5; }
+  a&:hover { color: #FFFFFF; }
+}
+
+.secondary {
+  color: #aed40f;
+  a&:link { color: #aed40f; }
+  a&:visited { color: #aed40f; }
+  a&:active { color: #aed40f; }
+  a&:hover { color: #FFFFFF; }
+}
+
+.selected {
+  a&:link { color: #dcdcdc; }
+  a&:visited { color: #dcdcdc; }
+  a&:active { color: #dcdcdc; }
+  a&:hover { color: #dcdcdc; }
+}
+
+.siteFont {
+  -webkit-font-smoothing: antialiased;
+  font-family: "Rokkitt", Helvetica;
+  font-weight: 800;
+  &.title {
+    font-size: 24px;
+  }
+}

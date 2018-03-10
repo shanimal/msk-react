@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 class Social extends Component {
   render() {
     return (
-      <div className="social">
+      <div className="Social">
         <iframe title="Facebook" className="fblike" scrolling="no" frameBorder="0" allowtransparency="true" src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fhome.php%23%21%2Fpages%2FMain-Street-Kickboxing-Hollister-Ca%2F121595357867256&amp;layout=button_count&amp;show_faces=false&amp;width=450&amp;action=like&amp;font=trebuchet+ms&amp;colorscheme=light&amp;height=21"></iframe>
         <div className="fbnews siteFont">
           <a ng-href="fbnews" className="primary" href="fbnews">facebook Live News Feed</a>

@@ -7,3 +7,15 @@ RewriteRule ^ - [L]
 
 # c
 RewriteRule ^ index.html [L]
+
+<ifModule mod_headers.c>
+Header set X-Frame-Options SAMEORIGIN
+Header set P3P "policyref="/w3c/p3p.xml""
+</ifModule>
+
+<Files ~ ".(htm|html|css|js)$">
+AddDefaultCharset UTF-8
+DefaultLanguage en-US
+</Files>
+
+AddType 'text/html; charset=UTF-8' .html

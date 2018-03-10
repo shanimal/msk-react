@@ -6,16 +6,17 @@ class ScheduleByDay extends Component {
   render() {
     const sorted = getGroupSortedByDay();
     return (
-      <div className="group sortedByDay">
+      <div className="ScheduleByDay group sortedByDay">
         {sorted.map(group => group ? this.renderGroup(group) : '')}
       </div>
     );
   }
   renderGroup(group) {
+    const name = group[0].day.name;
     return (
-      <div className="group sortedByDay">
+      <div className="group sortedByDay" key={name}>
         <div className="title linkGreen">
-          {group[0].day.name}
+          {name}
         </div>
         {group.map(this.renderItem)}
       </div>
@@ -23,16 +24,16 @@ class ScheduleByDay extends Component {
   }
   renderItem(item, index) {
     return (
-      <div className="section">
-        <span className="col2">
+      <div className="section" key={index}>
+        <span className="col1">
           {item.time.start} - {item.time.end}
         </span>
-        <span class="col3">
+        <span className="col2">
           <a href={`#${item.c}`}>
             {item.info.title}
-          </a>
+          </a><br/>
+          {item.desc ? <i className="desc">{item.desc}</i> : ''}
         </span>
-        <span class="col4">{item.desc ? `(${item.desc})` : ''}</span>
       </div>
     );
   }

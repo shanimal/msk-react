@@ -6,7 +6,7 @@ class ScheduleByTitle extends Component {
   render() {
     const sorted = getGroupSortedByTitle();
     return (
-      <div class="group sortedByTitle">
+      <div class="ScheduleByTitle group sortedByTitle">
         {sorted.map(group => this.renderGroup(group))}
       </div>
     );
@@ -28,7 +28,7 @@ class ScheduleByTitle extends Component {
         <span className="col2">
           {item.time.start} - {item.time.end}
         </span>
-        <span class="col4">{item.desc ? `(${item.desc})` : ''}</span>
+        <span class="col3">{item.desc ? <span className="desc">{item.desc}</span> : ''}</span>
       </div>
     );
   }

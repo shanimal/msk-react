@@ -1,0 +1,20 @@
+.ScheduleByDay .section {
+  .section {
+    &>* {
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  .col1 {
+    text-align: center;
+  }
+  .col2 .desc {
+    color: green;
+    &::before {
+      content: "(";
+    }
+    &::after {
+      content: ")";
+    }
+  }
+}
