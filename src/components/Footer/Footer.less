@@ -7,35 +7,35 @@
   position: relative;
   text-align: left;
   width: 900px;
-}
-.Footer .section {
-  padding: 40px;
-  vertical-align: top;
-  width: 350px;
-  display: inline-block;
-}
-.Footer > .section > .title {
-  color: #aed40f;
-  display: block;
-  margin-bottom: 30px;
-}
-.Footer > .section > .vertical_list {
-  display: block;
-  -moz-columns: 80px 3;
-  -webkit-columns: 80px 3;
-  columns: 80px 3;
-}
-.Footer .section ul.vertical_list li {
-  width: 70px;
-  height: 22px;
-}
-.Footer .section a {
-  color: #dcdcdc;
-}
-.Footer .lefter {
-  position: absolute;
-  top: -670px;
-  width: 44px;
-  height: 650px;
-  background: transparent url(left.png) no-repeat;
+  & >.section {
+    padding: 40px;
+    vertical-align: top;
+    width: 350px;
+    display: inline-block;
+    a {
+      color: #dcdcdc;
+    }
+    ul.vertical_list li {
+      width: 70px;
+      height: 22px;
+    }
+    & > .title {
+      color: #aed40f;
+      display: block;
+      margin-bottom: 30px;
+    }
+    & > .vertical_list {
+      display: block;
+      -moz-columns: 80px 3;
+      -webkit-columns: 80px 3;
+      columns: 80px 3;
+    }
+  }
+  .lefter {
+    position: absolute;
+    top: -670px;
+    width: 44px;
+    height: 650px;
+    background: transparent url(left.png) no-repeat;
+  }
 }

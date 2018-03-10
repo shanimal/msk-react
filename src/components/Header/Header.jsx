@@ -1,8 +1,8 @@
-import Menu from '../Menu/Menu';
-import Social from '../Social/Social';
-import React, { Component } from 'react';
 import './Header.css';
 import logo from './logo_opt.png';
+import Menu from '../Menu/Menu';
+import React, { Component } from 'react';
+import Social from '../Social/Social';
 import { withRouter } from 'react-router'
 
 class Header extends Component {

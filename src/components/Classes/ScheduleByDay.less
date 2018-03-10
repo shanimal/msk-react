@@ -1,10 +1,4 @@
 .ScheduleByDay .section {
-  .section {
-    &>* {
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-  }
   .col1 {
     text-align: center;
   }
@@ -15,6 +9,12 @@
     }
     &::after {
       content: ")";
+    }
+  }
+  .section {
+    &>* {
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
   }
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import './Pricing.css';
 
+// todo: use flexbox instead of a table
 const Pricing = () => (
   <div className="Pricing info_wrapper">
     <h2 className="primary">Pricing</h2>
@@ -12,22 +13,22 @@ const Pricing = () => (
       <tr>
         <td className="title"><a href="#ct" target="_self">Core Fitness</a></td>
         <td className="time">&nbsp;</td>
-        <td className="time">50</td>
+        <td className="cost">50</td>
       </tr>
       <tr>
         <td className="title"><a href="#ko" target="_self">Kids Kickboxing</a></td>
         <td className="time">includes starter pack*</td>
-        <td className="time">100</td>
+        <td className="cost">100</td>
       </tr>
       <tr>
         <td className="title"><a href="#sb" target="_self">MMA</a></td>
         <td className="time">&nbsp;</td>
-        <td className="time">100</td>
+        <td className="cost">100</td>
       </tr>
       <tr>
         <td className="title"><a href="#mt" target="_self">Muay Thai/ Boxing</a></td>
         <td className="time">&nbsp;</td>
-        <td className="time">100</td>
+        <td className="cost">100</td>
       </tr>
        <tr>
         <td className="title"><a href="#sf" target="_self">Super Seniors</a></td>
@@ -39,22 +40,22 @@ const Pricing = () => (
       <tr>
         <td className="title"><a href="#ct" target="_self">Core Fitness</a></td>
         <td className="time">all inclusive**</td>
-        <td className="time">75</td>
+        <td className="cost">75</td>
       </tr>
       <tr>
         <td className="title"><a href="#ko" target="_self">Kids Kickboxing</a></td>
         <td className="time">&nbsp;</td>
-        <td className="time">100</td>
+        <td className="cost">100</td>
       </tr>
       <tr>
         <td className="title"><a href="#sb" target="_self">MMA</a></td>
         <td className="time"></td>
-        <td className="time">150</td>
+        <td className="cost">150</td>
       </tr>
       <tr>
         <td className="title"><a href="#sb" target="_self">Muay Thai/ Boxing</a></td>
         <td className="time"></td>
-        <td className="time">100</td>
+        <td className="cost">100</td>
       </tr>
       <tr>
         <td className="title"><a href="#sf" target="_self">Super Seniors</a></td>

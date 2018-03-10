@@ -1,10 +1,4 @@
 .ScheduleByTime {
-  .section {
-    &>* {
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-  }
   .col1 {
     max-width: 110px;
     min-width: 110px;
@@ -31,6 +25,12 @@
     }
     &::after {
       content: ')'
+    }
+  }
+  .section {
+    &>* {
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
   }
 }
