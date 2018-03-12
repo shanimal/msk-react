@@ -1,8 +1,6 @@
 .Contact {
   .map img {
-    position: absolute;
-    top: 0;
-    right: 0;
+    width: 100%;
   }
   p {
     margin: 20px 0;
@@ -13,5 +11,23 @@
   .contact {
     font-size: 12px;
   }
-
+}
+@media only screen  and (min-width : 900px) {
+  .Contact {
+    .map img {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: initial;
+    }
+    p {
+      margin: 20px 0;
+    }
+    .blackBox {
+      min-height: 650px;
+    }
+    .contact {
+      font-size: 12px;
+    }
+  }
 }

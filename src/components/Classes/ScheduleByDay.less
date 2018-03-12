@@ -1,20 +1,22 @@
-.ScheduleByDay .section {
-  .col1 {
-    text-align: center;
-  }
-  .col2 .desc {
-    color: green;
-    &::before {
-      content: "(";
+@media only screen  and (min-width : 900px) {
+  .ScheduleByDay .section {
+    .col1 {
+      text-align: center;
     }
-    &::after {
-      content: ")";
+    .col2 .desc {
+      color: green;
+      &::before {
+        content: "(";
+      }
+      &::after {
+        content: ")";
+      }
     }
-  }
-  .section {
-    &>* {
-      overflow: hidden;
-      text-overflow: ellipsis;
+    .section {
+      & > * {
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
     }
   }
 }

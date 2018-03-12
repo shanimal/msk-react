@@ -1,22 +1,19 @@
 .Footer {
   background-color: #000000;
   filter: alpha(opacity=75);
-  height: 251px;
-  margin: 20px auto 0;
+  margin: 10px auto 0;
   opacity: .75;
   position: relative;
   text-align: left;
-  width: 900px;
-  & >.section {
+  width: 100%;
+  & > .section {
     padding: 40px;
     vertical-align: top;
-    width: 350px;
     display: inline-block;
     a {
       color: #dcdcdc;
     }
     ul.vertical_list li {
-      width: 70px;
       height: 22px;
     }
     & > .title {
@@ -33,9 +30,51 @@
   }
   .lefter {
     position: absolute;
-    top: -670px;
+    top: -680px;
     width: 44px;
     height: 650px;
+    right: 15px;
     background: transparent url(left.png) no-repeat;
+  }
+}
+
+@media only screen  and (min-width : 900px) {
+
+  .Footer {
+    height: 251px;
+    margin: 20px auto 0;
+    width: 900px;
+    & > .section {
+      padding: 40px;
+      vertical-align: top;
+      width: 350px;
+      display: inline-block;
+      a {
+        color: #dcdcdc;
+      }
+      ul.vertical_list li {
+        width: 70px;
+        height: 22px;
+      }
+      & > .title {
+        color: #aed40f;
+        display: block;
+        margin-bottom: 30px;
+      }
+      & > .vertical_list {
+        display: block;
+        -moz-columns: 80px 3;
+        -webkit-columns: 80px 3;
+        columns: 80px 3;
+      }
+    }
+    .lefter {
+      position: absolute;
+      top: -670px;
+      width: 44px;
+      height: 650px;
+      left: 0;
+      background: transparent url(left.png) no-repeat;
+    }
   }
 }

@@ -1,12 +1,26 @@
-.ScheduleByTime {
-  .col1 {
-    max-width: 110px;
-    min-width: 110px;
-  }
-  .col2 {
-    min-width: 275px;
-    .desc {
-      color: green;
+@media only screen  and (min-width : 900px) {
+  .ScheduleByTime {
+    .col1 {
+      max-width: 110px;
+      min-width: 110px;
+    }
+    .col2 {
+      min-width: 275px;
+      .desc {
+        color: green;
+        &::before {
+          content: '('
+        }
+        &::after {
+          content: ')'
+        }
+      }
+    }
+    .col3 {
+      max-width: 110px;
+      min-width: 110px;
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.75);
       &::before {
         content: '('
       }
@@ -14,23 +28,11 @@
         content: ')'
       }
     }
-  }
-  .col3 {
-    max-width: 110px;
-    min-width: 110px;
-    font-size: 12px;
-    color: rgba(255,255,255,0.75);
-    &::before {
-      content: '('
-    }
-    &::after {
-      content: ')'
-    }
-  }
-  .section {
-    &>* {
-      overflow: hidden;
-      text-overflow: ellipsis;
+    .section {
+      & > * {
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
     }
   }
 }

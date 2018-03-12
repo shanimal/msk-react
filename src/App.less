@@ -1,4 +1,3 @@
-/* Copyright Mainstreet Kickboxing 2018 All Rights Reserved */
 @font-face {
   font-family: 'Rokkitt';
   font-style: normal;
@@ -8,9 +7,6 @@
           local('Rokkitt-Regular'),
           url(http://fonts.gstatic.com/s/rokkitt/v12/qFdE35qfgYFjGy5hkEaCcw.ttf)
           format('truetype');
-}
-#root, body, html {
-  min-height: 100vh;
 }
 ol, ul {
   list-style: none;
@@ -43,7 +39,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Rokkitt", Helvetica;
   font-weight: 800;
   letter-spacing: 1.5px;
-  padding: 0;
   vertical-align: baseline;
 }
 h1 {
@@ -66,44 +61,32 @@ h4 {
 .App {
   border: 0;
   color: #FFFFFF;
-  font: normal normal 12px/15px 'Verdana', sans-serif;
+  font: normal normal 14px/18px 'Verdana', sans-serif;
   margin: 0 auto;
-  min-height: 100vh;
   padding: 0;
   overflow-x: hidden;
-  width: 900px;
 }
 #content {
-  font-size: 1rem;
-  margin: 0 0 0 28px;
-  padding: 0 0 0 50px;
   position: relative;
-  margin: 0 auto;
-  vertical-align: top;
-  text-align: left;
-  line-height: 21px;
-  .main {
-    width: 800px;
-  }
+  padding: 0 10px;
+}
+#root {
+  min-width: 360px;
 }
 .App-logo {
-  position: absolute;
-  top: 44px;
-  left: 26px;
-  width: 207px;
-  height: 160px;
-  background: transparent url(_img/logo_opt.png) no-repeat center top;
+  width: 150px;
+  background: transparent url(_img/logo_opt.png) no-repeat cover;
 }
 .App-header {
-  height: 150px;
-  padding: 20px;
   color: white;
 }
 .blackBox {
-  border: 5px solid #f8f8ff;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #f8f8ff;
   background-color: rgba(0, 0, 0, 0.85);
-  padding: 30px;
-  position: relative;
+  margin: 0;
+  padding: 12px 50px 24px 12px;
 }
 
 .linkWhite {
@@ -141,6 +124,116 @@ h4 {
   font-family: "Rokkitt", Helvetica;
   font-weight: 800;
   &.title {
-    font-size: 24px;
+    font-size: 22px;
+  }
+}
+
+
+
+
+@media only screen  and (min-width : 900px) {
+  /* Copyright Mainstreet Kickboxing 2018 All Rights Reserved */
+  @font-face {
+    font-family: 'Rokkitt';
+    font-style: normal;
+    font-weight: 400;
+    src:
+            local('Rokkitt Regular'),
+            local('Rokkitt-Regular'),
+            url(http://fonts.gstatic.com/s/rokkitt/v12/qFdE35qfgYFjGy5hkEaCcw.ttf)
+            format('truetype');
+  }
+  ol, ul {
+    list-style: none;
+  }
+  a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas,
+  caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption,
+  figure, footer, form, header, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav,
+  object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary,
+  sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+  }
+  a {
+    text-decoration: none;
+    &:link { color: #aed40f; }
+    &:visited { color: #aed40f; }
+    &:active { color: #aed40f; }
+    &:hover { color: #FFFFFF; }
+  }
+  body {
+    background-color: #000;
+    background: #000 url('_img/bg.jpg') no-repeat fixed center top;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    -webkit-font-smoothing: antialiased;
+    border: 0;
+    color: #ffffff;
+    font-family: "Rokkitt", Helvetica;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    padding: 0;
+    vertical-align: baseline;
+  }
+  h1 {
+    font-size: 45px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3, h4 {
+    font-weight: normal;
+    letter-spacing: .8px;
+    text-transform: UPPERCASE;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  .App {
+    border: 0;
+    color: #FFFFFF;
+    font: normal normal 12px/15px 'Verdana', sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    overflow-x: hidden;
+    width: 900px;
+  }
+  #content {
+    font-size: 1rem;
+    padding: 0 12px 0 50px;
+    position: relative;
+    margin: 0 auto;
+    vertical-align: top;
+    line-height: 21px;
+    .main {
+      width: 800px;
+    }
+  }
+  .App-logo {
+    position: absolute;
+    top: 44px;
+    left: 26px;
+    width: 207px;
+    height: 160px;
+  }
+  .App-header {
+    height: 150px;
+    padding: 20px;
+  }
+  .blackBox {
+    border: 5px solid #f8f8ff;
+    padding: 30px;
+    position: relative;
+  }
+
+  .siteFont {
+    &.title {
+      font-size: 24px;
+    }
   }
 }

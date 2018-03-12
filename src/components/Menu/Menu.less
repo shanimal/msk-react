@@ -1,16 +1,17 @@
 .Menu {
-  background: transparent url(bg.jpg) no-repeat center top;
   filter: alpha(opacity=90);
   height: 40px;
-  opacity: .9;
   position: absolute;
-  top: 106px;
-  width: 900px;
+  top: 0;
+  width: 100%;
+  z-index: 1;
   .bar {
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
     height: 40px;
-    left: 255px;
     position: absolute;
-    top: 12px;
     white-space: nowrap;
   }
   .indicator {
@@ -23,8 +24,8 @@
     position: absolute;
     top: -800px;
     transform: translateX(-50%);
-    transition: opacity 1s ease, top 1s ease;
-    width: 108px;
+    transition: opacity 1s ease, top 1s ease, height 400ms ease;
+    width: 100%;
     z-index: -1;
   }
   .tab {
@@ -42,8 +43,53 @@
       color: #aed40f;
       .indicator {
         filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
-        opacity: 0.75;
-        top: -108px;
+        height: 4px;
+        opacity: 0.5;
+        top: 30px;
+      }
+    }
+  }
+}
+
+@media only screen  and (min-width : 900px) {
+  .Menu {
+    background: transparent url(bg.jpg) no-repeat center top;
+    filter: alpha(opacity=90);
+    height: 40px;
+    opacity: .9;
+    position: absolute;
+    top: 106px;
+    width: 900px;
+    .bar {
+      height: 40px;
+      left: 255px;
+      position: absolute;
+      top: 12px;
+      white-space: nowrap;
+      display: block;
+    }
+    .indicator {
+      width: 108px;
+    }
+    .tab {
+      -webkit-font-smoothing: antialiased;
+      color: #f8f8ff;
+      font-family: "Rokkitt", Helvetica;
+      font-size: 25px;
+      font-weight: 800;
+      letter-spacing: .9px;
+      padding: 10px 19px;
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+      &.active {
+        color: #aed40f;
+        .indicator {
+          filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
+          opacity: 0.75;
+          top: -108px;
+          height: 147px;
+        }
       }
     }
   }
