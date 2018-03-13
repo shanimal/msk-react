@@ -1,27 +1,30 @@
 .Header {
   display: flex;
-  height: 200px;
+  height: 140px;
   margin: 0;
   position: relative;
   z-index: 1;
   .topper {
+    background: transparent url(topper.gif) no-repeat center top;
+    height: 38px;
+    left: 0;
+    opacity: 0.75;
     position: absolute;
     top: 0px;
-    left: 0;
     width: 100%;
-    height: 38px;
-    background: transparent url(topper.gif) no-repeat center top;
     z-index: 0;
   }
-  img {
-    z-index: 2;
-    width: 207px;
-    height: 160px;
+  img.logo {
+    height: 80px;
+    margin: 10px;
     position: relative;
+    width: 103.5px;
+    z-index: 2;
   }
 }
 @media only screen  and (min-width : 900px) {
   .Header {
+    height: 200px;
     margin: 0 auto;
     position: relative;
     width: 900px;
@@ -34,7 +37,10 @@
       height: 38px;
       background: transparent url(topper.gif) no-repeat center top;
     }
-    img {
+    img.logo {
+      z-index: 2;
+      width: 207px;
+      height: 160px;
       position: absolute;
       top: 45px;
       left: 30px;

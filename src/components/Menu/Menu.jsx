@@ -18,7 +18,7 @@ class Menu extends Component {
         { menuItems.map((tab) => {
           const active = currentTab === tab.id;
           return (
-            <Link className={`tab ${active ? 'active' : ''}`} to={`/${tab.id}`} key={tab.id} onClick={this.getChangeHandler(tab.id)}>
+            <Link className={`${tab.id} tab ${active ? 'active' : ''}`} to={`/${tab.id}`} key={tab.id} onClick={this.getChangeHandler(tab.id)}>
               {tab.label}
               <div className="indicator"></div>
             </Link>

@@ -54,34 +54,34 @@ class Page extends Component {
             <h2 className="primary">Gallery</h2>
             <div className="gallery" id="gallery">
               <div>
-                <a msk-selectable-link="default" href="#gallery" onClick={this.getClickHandler(bags)} title="Bags">
+                <a href="#gallery" onClick={this.getClickHandler(bags)} title="Bags">
                   <img src={bagsT} alt=""/>
                 </a>
-                Bags
+                <span class="desktop-only">Bags</span>
               </div>
               <div>
-                <a msk-selectable-link="" href="#gallery" onClick={this.getClickHandler(cage)} title="Cage">
+                <a href="#gallery" onClick={this.getClickHandler(cage)} title="Cage">
                   <img src={cageT} alt=""/>
                 </a>
-                Cage
+                <span class="desktop-only">Cage</span>
               </div>
               <div>
-                <a msk-selectable-link="" href="#gallery" onClick={this.getClickHandler(mirror)} title="Layout">
+                <a href="#gallery" onClick={this.getClickHandler(mirror)} title="Layout">
                   <img src={mirrorT} alt=""/>
                 </a>
-                Layout
+                <span class="desktop-only">Layout</span>
               </div>
               <div>
-                <a msk-selectable-link="" href="#gallery" onClick={this.getClickHandler(ring)} title="Ring">
+                <a href="#gallery" onClick={this.getClickHandler(ring)} title="Ring">
                   <img src={ringT} alt=""/>
                 </a>
-                Ring
+                <span class="desktop-only">Ring</span>
               </div>
               <div>
-                <a msk-selectable-link="" href="#gallery" onClick={this.getClickHandler(uppercut)}  title="Uppercut Bags">
+                <a href="#gallery" onClick={this.getClickHandler(uppercut)}  title="Uppercut Bags">
                   <img src={uppercutT} alt=""/>
                 </a>
-                Uppercut Bags
+                <span class="desktop-only">Uppercut Bags</span>
               </div>
               { bigImage && <img src={bigImage} alt=""/> }
             </div>

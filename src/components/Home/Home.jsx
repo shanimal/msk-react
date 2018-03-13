@@ -26,18 +26,20 @@ class Home extends Component {
             <div className="top-ad">
               <Slideshow />
             </div>
-            <h2 className="siteFont">Senior Classes</h2>
-            <Link to="classes#sf" className="linkWhite">
-              <div className="bottom-ad">
-                <img alt="Seniors" src={Seniors} />
-                <div className='right'>
-                  <h4>Our seniors are awesome!</h4>
-                  <p>Get your kicks every Tuesday and Thursday from 10:45 to 11:30am with our class designed specifically with seniors in mind. Bring a friend to cheer you on, or meet new friends that like to stay in shape.
-                    <span className="secondary more">More</span>
-                  </p>
+            <div className="feature-ad">
+              <h2 className="siteFont">Senior Classes</h2>
+              <Link to="classes#sf" className="linkWhite">
+                <div className="bottom-ad">
+                  <img alt="Seniors" src={Seniors} />
+                  <div className='right'>
+                    <h4>Our seniors are awesome!</h4>
+                    <p>Get your kicks every Tuesday and Thursday from 10:45 to 11:30am with our class designed specifically with seniors in mind. Bring a friend to cheer you on, or meet new friends that like to stay in shape.
+                      <span className="secondary more">More</span>
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </Link>
+              </Link>
+            </div>
           </div>
           <div className="right">
             <div className="ad">
@@ -82,7 +84,7 @@ class Home extends Component {
             <div>
               <a target="_blank" href={freeWeekSrc}>
                 <img className="freeWeek" src={freeWeekImg} alt="Free Week"/></a>
-              <p>MSK is now offering a one week pass.</p>
+              <p>MSK currently offers a one week pass.</p>
               <p>
                 <a target="_blank" href={freeWeekSrc}>
                   Click Here to find out details

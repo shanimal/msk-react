@@ -1,62 +1,55 @@
 .Home {
-  img.freeWeek {
-    transform: rotate(90deg);
-  }
-  &.main {
-    display: flex;
-    flex-direction: column-reverse;
-    .bottom {
-      flex: 1;
-      padding: 0;
-    }
-    .top {
-      flex: 0 0 250px;
-      padding: 0;
-    }
-
-  }
-  .left {
-  }
-  .top {
-    outline: 1px solid red;
-  }
-}
-
-.Home {
   display: flex;
   flex-direction: row-reverse;
   font-size: 14px;
   margin-top: 10px;
-  img.freeWeek {
-    transform: rotate(10deg);
-    height: 450px;
-    margin:0 10px 20px 10px;
+  &.main {
+    display: block;
+    .bottom {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      margin: 1rem;
+      padding: 0;
+      .left {}
+      .right {
+        margin: 1rem 0;
+        flex: 0 0 215px;
+        img.freeWeek {
+          transform: translateX(67px) rotate(45deg);
+        }
+      }
+      .blueBox {
+        border: 7px solid #dcdcdc;
+        div {
+          background: #000;
+          color: #999;
+          padding: 10px;
+          img {}
+        }
+        .title {
+          background: rgba(12, 61, 143, 0.8);
+          color: #aed40f;
+        }
+      }
+    }
+    .top {
+      flex: 0 0 250px;
+      padding: 0;
+      .feature-ad {
+        display: none;
+      }
+      .right {
+        margin: 0;
+        background-size: cover;
+      }
+    }
   }
   .blueBox .title span {
     color: #f8f8ff;
   }
   .bottom {
-    display: flex;
-    flex-direction: row;
-    margin: 1rem 1rem;
-    .left {}
-    .right {
-      margin: 4rem 0 0 1rem;
-      flex: 0 0 180px;
-    }
-    .blueBox {
-      border: 7px solid #dcdcdc;
-      div {
-        background: #000;
-        color: #999;
-        padding: 10px;
-        img {}
-      }
-      .title {
-        background: rgba(12, 61, 143, 0.8);
-        color: #aed40f;
-      }
-    }
+
   }
   .top {
     .left {}
@@ -65,7 +58,6 @@
     .left .top-ad {
       background: transparent url(image-box-main.gif) no-repeat;
       background-size: cover;
-      padding: 30px;
     }
     .bottom-ad {
       background: transparent url(image-box-middle-left.png) no-repeat;
@@ -92,6 +84,7 @@
           font-size: 20px;
           letter-spacing: 1.5px;
           padding-left: 20px;
+          max-width: 200px;
         }
         .body {
           color: #f8f8ff;
@@ -103,22 +96,12 @@
             margin: 1rem 0;
             text-transform: UPPERCASE;
           }
-          input[type=email] {
-            background-color: #222;
-            border: #222;
-            color: #f8f8ff;
-            padding: 5px;
-          }
-          input[type=submit] {
-            background-color: #333;
-            border: 1px solid #666;
-            color: #CCC;
-            padding: 5px;
-          }
           label {
             clear: both;
             color: #999;
             content: "";
+            display: table;
+            margin-bottom: 5px;
           }
         }
       }
@@ -126,49 +109,14 @@
   }
 }
 
-@media only screen  and (min-width : 600px) {
-  .Home {
-    &.main {
-      display: flex;
-      flex-direction: row-reverse;
-      outline: 1px solid blue;
-      .bottom {
-        flex: 1;
-        padding: 12px;
-      }
-      .top {
-        flex: 0 0 250px;
-        padding: 3rem 12px;
-      }
-
-    }
-    .left {
-    }
-    .top {
-      outline: 1px solid red;
-    }
-  }
-}
 @media only screen  and (min-width : 900px) {
   .Home {
-    display: flex;
     flex-direction: column;
-    font-size: 14px;
     line-height: 14px;
-    margin-top: 10px;
     &.main {
-      img.freeWeek {
-        transform: rotate(22deg);
-        width: 50px;
-      }
-      .blueBox .title span {
-        color: #f8f8ff;
-      }
+      display: flex;
       .bottom {
-        display: flex;
         flex-direction: row;
-        flex: 1;
-        margin: 1rem;
         .left {
           height: 200px;
           left: 5px;
@@ -178,24 +126,20 @@
         .right {
           height: 200px;
           left: 590px;
-          margin-left: 2rem;
           top: 585px;
-          width: 200px;
+          margin: 0 0 0 1rem;
+          img.freeWeek {
+            transform: rotate(22deg);
+          }
         }
         .blueBox {
-          border: 7px solid #dcdcdc;
           div {
-            background: #000;
-            color: #999;
             height: 134px;
-            padding: 10px;
             img {
               float: right;
             }
           }
           .title {
-            background: rgba(12, 61, 143, 0.8);
-            color: #aed40f;
             height: 25px;
           }
         }
@@ -207,18 +151,13 @@
         padding: 0 12px;
         .left {
           flex: 0;
-        }
-        .left h2 {
-          margin: 0 0 0 30px;
-        }
-        .left h4 {
-          margin: 0 0 0.5rem 0;
-        }
-        .left .top-ad {
-          background: transparent url(image-box-main.gif) no-repeat;
-          background-clip: padding-box;
-          background-size: cover;
-          padding: 30px;
+          h2 {
+            margin: 0 0 0 30px;
+          }
+          h4 {
+            margin: 0 0 0.5rem 0;
+          }
+
         }
         .bottom-ad {
           background: transparent url(image-box-middle-left.png) no-repeat;
@@ -237,6 +176,12 @@
           position: absolute;
           right: 2rem;
         }
+        .top-ad {
+          padding: 30px;
+        }
+        .feature-ad {
+          display: block;
+        }
         & > .right {
           background: transparent url(image-box-right.png) no-repeat center top;
           flex: 0 0 216px;
@@ -247,46 +192,8 @@
             position: relative;
             width: 175px;
             .head {
-              background: rgba(47, 44, 37, 0.72) url(arrow.png) no-repeat center left;
-              color: #aed40f;
-              font-size: 20px;
               height: 21px;
-              letter-spacing: 1.5px;
               line-height: 21px;
-              padding-left: 20px;
-            }
-            .body {
-              color: #f8f8ff;
-              font-weight: normal;
-              padding: 10px 5px 0;
-              h3 {
-                font-weight: normal;
-                letter-spacing: .8px;
-                margin: 1rem 0;
-                text-transform: UPPERCASE;
-              }
-              input[type=email] {
-                background-color: #222;
-                border: #222;
-                color: #f8f8ff;
-                height: 14px;
-                padding: 5px;
-                width: 100%;
-              }
-              input[type=submit] {
-                background-color: #333;
-                border: 1px solid #666;
-                color: #CCC;
-                padding: 5px;
-                width: 100%;
-              }
-              label {
-                clear: both;
-                color: #999;
-                content: "";
-                display: table;
-                margin-bottom: 5px;
-              }
             }
           }
         }

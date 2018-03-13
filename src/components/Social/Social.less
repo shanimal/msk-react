@@ -1,11 +1,8 @@
 .Social {
-  letter-spacing: .9px;
-  margin: 0;
-  padding: 0 10px;
-  position:absolute;
-  top: 167px;
-  display: flex;
-  width: 100%;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: auto;
   a {
     font-size: 20px;
   }
@@ -24,24 +21,19 @@
   }
   .action_arrow {
     background: transparent url(action_arrow.png) no-repeat center top;
+    display: none;
     height: 60px;
-    width: 60px;
     margin-top: -14px;
-    display: none;
-  }
-  .desktop-only {
-    display: none;
+    width: 60px;
   }
   .links {
-    display: flex;
-    flex: 1;
-    margin: 2rem;
-    justify-content: flex-end;
+    margin-top: -20px;
     .fblink {
       -moz-transition: opacity 1s ease;
       -o-transition: opacity 1s ease;
       -webkit-transition: opacity 1s ease;
       background: transparent url(social_facebook.png) no-repeat center top;
+      background-size: 60px 60px;
       display: inline-block;
       filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
       height: 60px;
@@ -58,6 +50,7 @@
       -o-transition: opacity 1s ease;
       -webkit-transition: opacity 1s ease;
       background: transparent url(social_youtube.png) no-repeat center top;
+      background-size: 60px 60px;
       display: inline-block;
       filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
       height: 60px;
@@ -78,35 +71,20 @@
   }
   .fbnews {
     color: #1c73e5;
-    display: block;
+    display: none;
     flex: 1 1 100%;
     margin: 0;
-  }
-}
-@media only screen  and (min-width : 600px) {
-  .action {
-    .follow {
-      display: block;
-    }
-    .shopmsk {
-      display: block;
-    }
-    .action_arrow {
-      display: block;
-    }
   }
 }
 
 @media only screen  and (min-width : 900px) {
   .Social {
+    align-items: center;
     display: flex;
     height: 54px;
     left: 285px;
-    letter-spacing: .9px;
-    margin: 0;
-    padding: 0;
+    right: auto;
     top: 155px;
-    width: auto;
     a {
       font-size: 20px;
     }
@@ -125,11 +103,8 @@
       }
     }
     .action_arrow {
-      background: transparent url(action_arrow.png) no-repeat center top;
       display: block;
-      height: 60px;
       margin: 5px 0 0 154px;
-      width: 60px;
     }
     .desktop-only {
       display: inline-block;
