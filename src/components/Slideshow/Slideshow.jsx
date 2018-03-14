@@ -27,10 +27,10 @@ class Slideshow extends Component {
         <Link to={data[currentIndex].href}>
         {data.map((slide, index) => {
           return (
-            <div
+            <img
+              src={slide.src}
               key={slide.src}
               className={`image ${index === currentIndex ? 'front' : 'back'}`}
-              style={{backgroundImage: `url(${slide.src})`}}
             />
           );
         })}

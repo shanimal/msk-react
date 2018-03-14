@@ -77,6 +77,59 @@
   }
 }
 
+@media only screen  and (min-width : 600px) {
+  .Social {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: auto;
+    a {
+      font-size: 20px;
+    }
+    .action {
+      display: flex;
+      a {
+        display: block;
+        flex: 1 0 100px;
+      }
+      .follow {
+        display: block;
+        position: absolute;
+        top: 65px;
+        right: 150px;
+        width: 100px;
+      }
+      .shopmsk {
+        display: block;
+        position: absolute;
+        top: 65px;
+        right: 270px;
+        width: 100px;
+      }
+    }
+    .action_arrow {
+      background: transparent url(action_arrow.png) no-repeat center top;
+      display: block;
+      position: absolute;
+      top: 28px;
+      right: 260px;
+      height: 60px;
+      width: 60px;
+      transform: rotate(45deg);
+    }
+    .fbnews {
+      position: absolute;
+      top: 5px;
+      right: -25px;
+      width: 300px;
+      color: #1c73e5;
+      display: block;
+      flex: 1 1 100%;
+      margin: 0;
+    }
+  }
+}
+
 @media only screen  and (min-width : 900px) {
   .Social {
     align-items: center;
@@ -97,14 +150,24 @@
       }
       .follow {
         display: block;
+        position: relative;
+        top: 0;
+        right: 0;
       }
       .shopmsk {
         display: block;
+        position: relative;
+        top: 0;
+        right: 0;
       }
     }
     .action_arrow {
       display: block;
       margin: 5px 0 0 154px;
+      position: relative;
+      top: 0;
+      right: 0;
+      transform: rotate(0);
     }
     .desktop-only {
       display: inline-block;
@@ -112,6 +175,7 @@
     .fblike {
       border: none;
       overflow: hidden;
+      height: 56px;
     }
     .fbnews {
       color: #1c73e5;
@@ -120,6 +184,7 @@
       margin: 0;
       position: absolute;
       top: 25px;
+      right: 260px;
     }
     .links {
       display: flex;

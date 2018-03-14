@@ -9,23 +9,28 @@
       display: flex;
       flex-direction: column;
       flex: 1;
-      margin: 1rem;
+      margin: 1rem 0;
       padding: 0;
       .left {}
       .right {
         margin: 1rem 0;
         flex: 0 0 215px;
         img.freeWeek {
-          transform: translateX(67px) rotate(45deg);
+          transform: translate(30px, -60px) rotate(45deg);
         }
       }
       .blueBox {
+        display: flex;
         border: 7px solid #dcdcdc;
-        div {
+        &> div {
+          flex: 1;
           background: #000;
           color: #999;
           padding: 10px;
           img {}
+          &:first-child {
+            flex: 0 0 100px;
+          }
         }
         .title {
           background: rgba(12, 61, 143, 0.8);
@@ -109,6 +114,26 @@
   }
 }
 
+@media only screen  and (min-width : 600px) {
+  .Home {
+    &.main {
+      .bottom {
+        display: flex;
+        flex-direction: row;
+        .blueBox {
+          display: flex;
+          margin: 0 0.5rem;
+        }
+        .right {
+          img.freeWeek {
+            transform: translate(-60px, 40px) scale(1.2) rotate(25deg);
+          }
+        }
+      }
+    }
+  }
+}
+
 @media only screen  and (min-width : 900px) {
   .Home {
     flex-direction: column;
@@ -116,6 +141,7 @@
     &.main {
       display: flex;
       .bottom {
+        margin: 1rem;
         flex-direction: row;
         .left {
           height: 200px;
@@ -129,10 +155,11 @@
           top: 585px;
           margin: 0 0 0 1rem;
           img.freeWeek {
-            transform: rotate(22deg);
+            transform: translate(20px, -57px) rotate(22deg);
           }
         }
         .blueBox {
+          display: block;
           div {
             height: 134px;
             img {

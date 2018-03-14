@@ -5,9 +5,9 @@ import ScheduleByTime from './ScheduleByTime';
 import './Schedule.css';
 
 const sorts = [
-  {name: 'Day of Week', component: ScheduleByDay},
-  {name: 'Class Name', component: ScheduleByName},
-  {name: 'Start Time', component: ScheduleByTime},
+  {name: 'By Day', component: ScheduleByDay},
+  {name: 'By Name', component: ScheduleByName},
+  {name: 'By Time', component: ScheduleByTime},
 ];
 
 class Schedule extends Component {

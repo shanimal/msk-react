@@ -1,25 +1,16 @@
 .Facility {
   margin: 0;
   position: relative;
-  ul {
-    list-style: disc;
-  }
-  .blackBox {
-    td {
-      color: rgba(255, 255, 255, 0.9);
-      font-family: 'Verdana', sans-serif;
-      font-style: normal;
-      font-variant: normal;
-      font-weight: normal;
-      letter-spacing: 0;
-      line-height: 17px;
-      opacity: 1;
-      padding: 0 30px;
-      text-align: left;
-      text-decoration: none;
-      text-indent: 0;
-      text-transform: none;
-      vertical-align: top;
+  .featureList {
+    column-count: 1;
+    list-style: disc outside none;
+    margin: 1rem;
+    padding-left: 1em;
+    div::before {
+      content: '■';
+      position:absolute;
+      margin-left: -1rem;
+      color: #aed40f;
     }
   }
   .gallery {
@@ -35,42 +26,28 @@
         }
       }
     }
-    & > img[src] {
+    &> img.bigImage {
       width: 100%;
-      margin: 0 auto;
+      margin: 1rem auto 2rem;
       bottom: 20px;
       left:0;
       border: 1px solid #FFF;
     }
   }
 }
-
+@media only screen  and (min-width : 600px) {
+  .Facility {
+    .featureList {
+      column-count: 2;
+    }
+  }
+}
 @media only screen  and (min-width : 900px) {
   .Facility {
     margin: 0;
     position: relative;
-    ul {
-      list-style: disc;
-    }
-    .blackBox {
-      padding: 0 30px 30px 30px;
-      td {
-        color: rgba(255, 255, 255, 0.9);
-        font-family: 'Verdana', sans-serif;
-        font-style: normal;
-        font-variant: normal;
-        font-weight: normal;
-        letter-spacing: 0;
-        line-height: 17px;
-        opacity: 1;
-        padding: 0 30px;
-        text-align: left;
-        text-decoration: none;
-        text-indent: 0;
-        text-transform: none;
-        vertical-align: top;
-        width: 400px;
-      }
+    .featureList {
+      column-count: 3;
     }
     .gallery {
       text-align: center;
@@ -87,15 +64,6 @@
             width: 100%;
           }
         }
-      }
-      & > img[src] {
-        border: 1px solid #FFF;
-        width: 100%;
-
-        width: 100%;
-        position: relative;
-        margin: 0 auto;
-        border: 1px solid #FFF;
       }
     }
   }

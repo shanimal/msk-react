@@ -1,22 +1,27 @@
-@media only screen  and (min-width : 900px) {
-  .ScheduleByDay .section {
-    .col1 {
-      text-align: center;
+.ScheduleByDay .section {
+  .col1 {
+    padding: 0 1rem 0 0;
+    width: 100%
+  }
+  .col2 .desc {
+    color: green;
+    &::before {
+      content: "(";
     }
-    .col2 .desc {
-      color: green;
-      &::before {
-        content: "(";
-      }
-      &::after {
-        content: ")";
-      }
+    &::after {
+      content: ")";
     }
-    .section {
-      & > * {
-        overflow: hidden;
-        text-overflow: ellipsis;
-      }
+  }
+  .section {
+    & > * {
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
+  }
+}
+@media only screen  and (min-width : 600px) {
+  .col1 {
+    padding: 0;
+    width: 200px
   }
 }

@@ -1,29 +1,60 @@
-@media only screen  and (min-width : 900px) {
-  .Pricing {
+.Pricing {
+  .info {
+    margin:1rem 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    &>div {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 1rem 0;
+    }
+    .cost {
+      color: #f8f8ff;
+    }
+    .section {
+      width: 100%;
+      border-bottom: 1px solid #1c73e5!important;
+      padding: 1rem 0 .5rem;
+      align-items: left;
+    }
     .superseniors {
+      align-items: center;
       background-color: darkgreen;
       background-color: rgba(0, 0, 66, 0.5);
-      color: #aed40f;
+      color: #FFF;
+      display: flex;
+      justify-content: center;
+      margin: 0.5rem 0;
       outline: 2px dashed rgba(174, 212, 15, 0.5);
+      padding: 0 1rem;
       text-align: center !important;
-      &::after {
-        content: "\00a0 \00a0 \2702";
-      }
       &::before {
         content: "\2702 \00a0 \00a0 ";
       }
     }
-    .time {
-      color: #f8f8ff;
-      padding-right: 1rem;
-      text-align: right;
-      white-space: nowrap;
+  }
+  .primary {
+    margin: 1rem 0;
+  }
+}
+@media only screen  and (min-width : 600px) {
+  .Pricing {
+    .info {
+      &>div {
+        width: 50%;
+        &.full {
+          width: 100%;
+        }
+      }
     }
-    .cost {
-      color: #f8f8ff;
-      padding-right: 1rem;
-      text-align: right;
-      white-space: nowrap;
+  }
+  .superseniors {
+    &::after {
+      content: "\00a0 \00a0 \2702";
     }
   }
 }
+@media only screen  and (min-width : 900px) {}

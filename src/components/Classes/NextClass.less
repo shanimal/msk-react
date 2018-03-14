@@ -1,4 +1,47 @@
-@media only screen  and (min-width : 900px) {
+.NextClass {
+  .group.nextClass {
+    background: rgba(0, 0, 0, 0.9);
+    background: url(bg.jpg), linear-gradient(to right, #1e4b73, rgba(255, 255, 255, 0));
+    border-radius: 0.5em;
+    border: 1px solid #FFF;
+    color: #999;
+    margin: 1rem 0 0 0;
+    padding: 1rem;
+    .section {
+      align-items: center;
+      color: #FFF;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 1rem;
+      white-space: nowrap;
+      span {
+        flex: 1;
+        margin: 2px 0;
+      }
+      .col1, .col2, .col3 {
+        text-align: center;
+      }
+      .col3 {
+        color: green;
+        &::before {
+          content: "(";
+        }
+        &::after {
+          content: ")";
+        }
+      }
+      .col4 {
+
+      }
+    }
+  }
+  .nowrap {
+    display: inline-block;
+    white-space: nowrap;
+  }
+}
+@media only screen  and (min-width : 600px) {
   .NextClass {
     .group.nextClass {
       background: rgba(0, 0, 0, 0.9);
@@ -9,17 +52,29 @@
       margin: 1rem 0 0 0;
       padding: 0 1rem 1rem 1rem;
       .section {
-        color: #FFF;
-        display: flex;
-        justify-content: space-evenly;
-        margin-top: 1rem;
+        span {
+          margin: 1rem;
+        }
         .col3 {
-          color: #33F;
+
         }
         .col4 {
           width: 200px;
         }
       }
+    }
+  }
+}
+@media only screen  and (min-width : 900px) {
+  .NextClass {
+    .group.nextClass {
+      background: rgba(0, 0, 0, 0.9);
+      background: url(bg.jpg), linear-gradient(to right, #1e4b73, rgba(255, 255, 255, 0));
+      border-radius: 0.5em;
+      border: 1px solid #FFF;
+      color: #999;
+      margin: 1rem 0 0 0;
+      padding: 0 1rem 1rem 1rem;
     }
   }
 }

@@ -7,7 +7,7 @@ class Footer extends Component {
   render() {
     return (
       <div className="Footer">
-        <div className="lefter" />
+        <a className="lefter" href="#" />
         <div className="map section">
           <label className="title siteFont">Site Map</label>
           <ul className="vertical_list">
