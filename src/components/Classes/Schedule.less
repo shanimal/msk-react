@@ -1,4 +1,5 @@
 .Schedule {
+  position: relative;
   .group {
     .col1 {
       flex: 1 1 300px;
@@ -12,14 +13,37 @@
     .col4 {
       flex: 1 1 100%;
     }
+    .index {
+      display: flex;
+      justify-content: center;
+      margin: 2rem 0 0 2rem;
+      flex-wrap: wrap;
+      a {
+        border-radius: 1rem;
+        border: 1px solid gray;
+        display: inline-block;
+        flex: 1;
+        margin: 0.5rem;
+        padding: 1rem;
+        text-align:center;
+        white-space: nowrap;
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.25)
+        }
+        &:active,
+        &.on {
+          background-color: rgba(28, 115, 229, 0.75)
+        }
+      }
+    }
     .section {
       margin: 1rem;
     }
     .title {
-      text-align: left;
-      padding: 1rem 0 0.5em 0;
       border-bottom: 1px solid #1c73e5 !important;
       margin-bottom: 0.5em;
+      padding: 1rem 0 0.5em 0;
+      text-align: left;
     }
     span {
       display: inline-block;
@@ -27,10 +51,17 @@
   }
   .scheduleSort {
     color: #999;
-    text-align: center;
-    margin: 1rem 0;
+    position: absolute;
+    right: 20px;
+    top: 0;
     &::after {
       content: ' ',
+    }
+    @media only screen and (max-width: 600px) {
+      left: 20px;
+      position: relative;
+      text-align: center;
+      top: 0;
     }
   }
 }

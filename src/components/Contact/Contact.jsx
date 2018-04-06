@@ -22,17 +22,22 @@ class Page extends Component {
                 <a href="mailto:Ralph@MainStreetKickboxing.com">Ralph@MainStreetKickboxing.com</a><br/>
               </p>
               <div className="map">
-                <a target="_blank" href="http://goo.gl/maps/ohvjr" rel="noopener noreferrer">
+                <a className="mapImage" target="_blank" href="http://goo.gl/maps/ohvjr" rel="noopener noreferrer">
                   <img
                     alt="View on maps"
                     title="Click to view larger map"
                     className="gmap"
                     src="http://maps.google.com/maps/api/staticmap?center=36.84753615757422,-121.39131474501482&amp;zoom=16&amp;markers=icon:http%3A%2F%2Fmsk.shanimal.com%2F_img%2Flogo_map.png%3F4|36.84753615757422,-121.39131474501482&amp;size=500x500&amp;sensor=false"
-
-                  /><br/>
+                  />
+                </a>
+              </div>
+              <div className="mapLinks">
+                <a className="largeMap" target="_blank" href="http://goo.gl/maps/ohvjr" rel="noopener noreferrer">
                     View larger map
-                </a><br/>
-                <a target="_blank" href="http://goo.gl/maps/ohvjr" rel="noopener noreferrer">Get Directions</a>
+                </a>
+                <a className="directions" target="_blank" href="http://goo.gl/maps/ohvjr" rel="noopener noreferrer">
+                  Get Directions
+                </a>
               </div>
             </div>
           </div></div>

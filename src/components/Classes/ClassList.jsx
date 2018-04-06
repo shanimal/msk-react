@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { classes } from '../../services/siteData';
+import './ClassList.css';
 
 class ClassList extends Component {
   render() {
@@ -18,8 +19,9 @@ class ClassList extends Component {
       return (
         <div className="p1" key={cls.title}>
           <a name={cls.c} id={cls.c}>&nbsp;</a>
-          <h2 className="secondary">{cls.title}</h2>
+          <h3 className="secondary">{cls.title}</h3>
           <p dangerouslySetInnerHTML={{ __html: cls.detail }} />
+          <a className="topLink" href="#class_info">^</a>
         </div>
       );
     }

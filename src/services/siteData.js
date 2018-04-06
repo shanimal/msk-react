@@ -24,7 +24,7 @@ export const classes = [
   // {live: 0, c: "am", title: "Adult MMA Submission", detail: "Taking it to the next level combining everything we do here at MSK. That is the MMA class taught by Mike Vanderlei. Mike teaches this class on Saturday mornings. This one hour class is for the students who have passed there beginner program in Muay Thai, and in Submission. Then if they choose they can take on the challenge of combining everything in this MMA program. A little stand up, some fence work, combined with take downs and finishing on the ground. That is MMA and that is what your going to learn in this class. Set up to test the most conditioned of our fighters but not to hard for the weekend warrior."},
   {live: 1, c: "bc", title: "Bag Class", detail: 'It has been said a bag workout can be one of the most rewarding exercises for all experience levels because you perform at or above your ability. As you progress, the difficulty level increases because your body continues to excel by its own standard. This is never an unrewarding exercise. In Bag Class you will learn how to make the most of your workout. We focus on punching, leg kicks, and the short range offensive using knees and elbows. This class will get you in shape and optimize your performance.'},
   {live: 1, c: "bj", title: "Jui-Jitsu", detail: "BJJ promotes the concept that a smaller, weaker person can successfully defend themselves or another against a bigger, stronger, heavier assailant by using proper technique, leverage, and most notably, taking the fight to the ground, and then applying joint locks and chokeholds to defeat the opponent. BJJ training can be used for sport grappling tournaments and in self-defense situations."},
-  {live: 1, c: "br", title: "Battle Ropes", detail: "Battle Ropes work each arm independently eliminating strength imbalances as they sculpt muscle"},
+  {live: 1, c: "br", title: "Battle Ropes", detail: "Our Battle Ropes classes here at MSK are killer! It will definitely challenge your whole body. These classes ramp up quick and you'll find yourself in what feels like a sprint for the remainder of the workout. It's a must try for those looking to change it up a bit using cardio and \"yes\" strength."},
   {live: 1, c: "bx", title: "Boxing", detail: "The boxing program at Main Street Kickboxing is one that is taught by our head instructor Danny Kelly, who himself has had plenty of boxing experience being sparring partners to some great boxers like NABF Middle Weight Champ Cecil Mackenzie, and Cruiser Weight Champ David Vedder along with names like Richardo Cortez and many more. Danny has also trained and led a young fighter to win the San Francisco Golden Gloves his first time entering as a Light Heavyweight. This program will teach you the sweet science of boxing, the ability to see and dodge punches, hit the hardest and fastest, all this while being able to move your feet and maintain the balance needed for both."},
   {live: 1, c: "ct", title: "Core Fitness", detail: "Core Fitness is another popular class at MSK. Students have made great accomplishments in their weight control and conditioning from taking this class. It is a culmination of cardio and strength, which anyone who knows fitness and getting in shape that this is a unbeatable combination to accomplish your results. One hour of running, medicine ball work and overall body weight exercises makes up this program. Be careful it only takes one class to feel the immediate addiction of core Fitness."},
   {live: 1, c: "ko", title: "Kids Kickboxing", detail: "This program was developed by head instructor Danny Kelly, who has been teaching for over twenty years. Many of those years were spent teaching kids of all ages. If you ask him, it takes more preparation and skill to teach a class full of kids than adults. MSK runs a very fun but technical class that teaches the kids the sport of MMA and how to become better athletes through an assortment of drills that challenge them both mentally and physically."},
@@ -33,7 +33,7 @@ export const classes = [
   {live: 1, c: "pt", title: "Personal Training", detail: "For some people the class setting isn't their thing. If that is you or if you want to spend a little more time on a certain phase of your skill set, one on one training might be for you. Lessons are set up in half hour and hour increments, with two, four, or six students at a time. Personal lessons allows you to get a lot accomplished in a short time with a top notch instructor correcting your every move as you go."},
   // {live: 1, c: "sb", title: "Submission/MMA", detail: "We call this class Submission for the reason that there has been such a large blend of all ground fighting skills from JuiJitsu, to Sambo, to Submission Wrestling. They all play a part in what we do on the ground. We incorporated all these arts because you just cant do it with one. Our instructor is Mike Vanderlei. Mike has been with Danny from day one and has become a great fighter/coach. Mike is a crucial part of the teams success on the ground."},
   {live: 1, c: "sf", title: "Super Seniors", detail: "<p>Our \"Super Seniors\" class was developed to help older adults maintain a healthy body through exercise and lifestyle change.<p>Our program is designed to improve your wellbeing and health. The best way to accomplish that is for students to only push themselves to the limits they're comfortable with and go beyond that only when the trainer and student agree they are ready. We are considerate of physical ailments that our students have developed over the years and while we want you to strive to achieve maximum results, achieving those results should be done safely. Your health and improved fitness is the ultimate goal."},
-  {live: 1, c: "sp", title: "Sparring", detail: "Sparring is a form of training common to many combat sports. Although the precise form varies, it is essentially relatively 'free-form' fighting, with enough rules, customs, or agreements to make injuries unlikely."},
+  {live: 1, c: "sp", title: "Sparring", detail: "Sparring here at MSK is something that is available to anyone that is interested. For most students it's a slow transition, that comes over time. It's a decision that is made by the student and head trainer Danny Kelly. We make sure that everyone is in proper protective gear and is ready. Usually our ring training starts with limited techniques being used not to overwhelm the participants. It can be something you do once or it may turn into a stepping stone to competition. Either way it's is done with professionalism and concern for the safety of the members."},
 
 ];
 
@@ -69,15 +69,16 @@ export const siteMap = [
 export const schedule = [
 
   // Monday / Wednesday
-  {d: 1, t: 1, s:16.0, c: "ko", desc: "Ages 7-12"}, 
-  {d: 3, t: 1, s:16.0, c: "ko", desc: "Ages 7-12"}, 
+  {d: 1, t: 1, s:16.0, c: "ko", desc: "Ages 7-12"},
+  {d: 3, t: 1, s:16.0, c: "ko", desc: "Ages 7-12"},
   {d: 1, t: 0.5, s:17.0, c: "og", desc: ""         }, 
   {d: 3, t: 0.5, s:17.0, c: "og", desc: ""         }, 
   {d: 1, t: 1, s:17.5, c: "ct", desc: ""         }, 
   {d: 3, t: 0.5, s:17.5, c: "br", desc: ""         }, 
   {d: 3, t: 0.5, s:18, c: "br", desc: ""         }, 
-  {d: 1, t: 1, s:18.5, c: "mt", desc: "Advanced" }, 
-  {d: 1, t: 1, s:19.5, c: "bj", desc: ""         }, 
+  {d: 1, t: 1, s:18.5, c: "mt", desc: "Advanced" },
+  {d: 1, t: 1, s:19.5, c: "bj", desc: ""         },
+  {d: 3, t: 1, s:19.5, c: "bj", desc: ""         },
 
   // Tuesday / Thursday
   {d: 2, t: 1, s:8.5, c: "bc", desc: ""        }, 
@@ -92,22 +93,39 @@ export const schedule = [
   {d: 4, t: 1, s:17.5, c: "ct", desc: ""        }, 
   {d: 2, t: 1, s:18.5, c: "mt", desc: ""        }, 
   {d: 4, t: 1, s:18.5, c: "mt", desc: ""        }, 
-  {d: 2, t: 0.75, s:16, c: "ko", desc: "Coming Soon! Call for Details" }, 
-  {d: 4, t: 0.75, s:16, c: "ko", desc: "Coming Soon! Call for Details" }, 
+  {d: 2, t: 0.75, s:16, c: "ko", desc: "Ages 4-6" },
+  {d: 4, t: 0.75, s:16, c: "ko", desc: "Ages 4-6" },
 
   // Friday
-  {d: 5, t: 1, s:16, c: "ko", desc: "Ages 6-12"}, 
+  {d: 5, t: 1, s:16, c: "ko", desc: "Ages 6-12"},
 
   // Saturday
   {t: 1, s:9, c: "mt", desc: "", d: 6}, 
   {t: 1, s:10, c: "ct", desc: "", d: 6}, 
   {t: 2, s:10, c: "sp", desc: "", d: 6}, 
   {t: 2, s:10, c: "bj", desc: "", d: 6}, 
-];
+].sort((a, b) => {
+  return (
+    // check day
+    (a.d > b.d && 1) ||
+    (a.d < b.d && -1) ||
+    // check start time
+    (a.s > b.s && 1) ||
+    (a.s < b.s && -1) ||
+    // check end time (shorter classes first)
+    (a.t > b.t && 1) ||
+    (a.t < b.t && -1) ||
+    // check name
+    (a.c > b.c && 1) ||
+    (a.c < b.c && -1) ||
+    // no difference
+    0
+  )
+});
 
-const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-const shortDayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-const abbrDayNames = ['Su', 'M', 'T', 'W', 'Th', 'F', 'S'];
+export const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+export const shortDayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+export const abbrDayNames = ['Su', 'M', 'T', 'W', 'Th', 'F', 'S'];
 
 export const siteData = {
   classes,

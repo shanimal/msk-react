@@ -28,6 +28,7 @@ class Slideshow extends Component {
         {data.map((slide, index) => {
           return (
             <img
+              alt=''
               src={slide.src}
               key={slide.src}
               className={`image ${index === currentIndex ? 'front' : 'back'}`}

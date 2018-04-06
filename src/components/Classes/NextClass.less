@@ -14,29 +14,32 @@
       flex-wrap: wrap;
       justify-content: center;
       margin-top: 1rem;
-      white-space: nowrap;
       span {
         flex: 1;
         margin: 2px 0;
       }
-      .col1, .col2, .col3 {
+      .col1, .col2, .col3, .col4 {
         text-align: center;
+        white-space: nowrap;
+        flex: 1 1 100%;
       }
       .col3 {
         color: green;
         &::before {
-          content: "(";
+          content: attr(before);
         }
         &::after {
-          content: ")";
+          content: attr(after);
         }
       }
       .col4 {
-
+        color: green;
+        opacity: 0.5;
       }
     }
   }
   .nowrap {
+    margin-right: 1rem;
     display: inline-block;
     white-space: nowrap;
   }
@@ -51,17 +54,6 @@
       color: #999;
       margin: 1rem 0 0 0;
       padding: 0 1rem 1rem 1rem;
-      .section {
-        span {
-          margin: 1rem;
-        }
-        .col3 {
-
-        }
-        .col4 {
-          width: 200px;
-        }
-      }
     }
   }
 }

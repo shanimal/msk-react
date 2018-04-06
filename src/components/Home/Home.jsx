@@ -1,5 +1,5 @@
 import './Home.css';
-import ClassesLeft from "./ads/classes_left.png";
+import ClassesLeft from "./ads/BJJSchedule.gif";
 import freeWeekFront from "./ads/freePassFront.png";
 import freeWeekBack from "./ads/freePassBack.png";
 import Arrow from "./arrow.png";
@@ -52,7 +52,7 @@ class Home extends Component {
               <div className="head siteFont">Updates</div>
               <div className="body">
                 <a href="/classes#schedule">
-                  <h3 className="secondary siteFont">New!!! Submission Class Every Saturday @10AM</h3>
+                  <h3 className="secondary siteFont">New! BJJ!!!<br/>Brazilian<br/>Jiu-Jitsu</h3>
                   <img src={ClassesLeft} width="185" alt="Saturday Submission Class" />
                 </a>
               </div>

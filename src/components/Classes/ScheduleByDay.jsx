@@ -3,26 +3,47 @@ import { getGroupSortedByDay } from '../../services/siteData';
 import './ScheduleByDay.css';
 
 class ScheduleByDay extends Component {
+  constructor(props) {
+    super(props);
+    this.renderGroup = this.renderGroup.bind(this);
+    this.renderIndex = this.renderIndex.bind(this);
+    this.renderItems = this.renderItems.bind(this);
+  }
   render() {
     const sorted = getGroupSortedByDay();
     return (
       <div className="ScheduleByDay group sortedByDay">
-        {sorted.map(group => group ? this.renderGroup(group) : '')}
+        <div className="index">
+        {sorted.map(this.renderIndex)}
+        </div>
+        {sorted.map(this.renderGroup)}
       </div>
     );
   }
   renderGroup(group) {
+    if (!group) {
+      return '';
+    }
     const name = group[0].day.name;
+    const anchor = group[0].day.abbr.replace(' ', '');
     return (
-      <div className="group sortedByDay" key={name}>
+      <div className="group sortedByDay" key={name} id={anchor}>
         <div className="title linkGreen">
           {name}
         </div>
-        {group.map(this.renderItem)}
+        {group.map(this.renderItems)}
       </div>
     );
   }
-  renderItem(item, index) {
+  renderIndex(group) {
+    if (!group) {
+      return '';
+    }
+    const abbr = group[0].day.name;
+    const anchor = group[0].day.abbr.replace(' ', '');
+    return <a href={`#${anchor}`}>{abbr}</a>;
+  }
+  renderItems(item, index) {
     return (
       <div className="section" key={index}>
         <span className="col1">

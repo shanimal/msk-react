@@ -53,31 +53,31 @@ class Page extends Component {
                 <a href="#gallery" onClick={this.getClickHandler(bags)} title="Bags">
                   <img src={bagsT} alt=""/>
                 </a>
-                <span class="desktop-only">Bags</span>
+                <span className="desktop-only">Bags</span>
               </div>
               <div>
                 <a href="#gallery" onClick={this.getClickHandler(cage)} title="Cage">
                   <img src={cageT} alt=""/>
                 </a>
-                <span class="desktop-only">Cage</span>
+                <span className="desktop-only">Cage</span>
               </div>
               <div>
                 <a href="#gallery" onClick={this.getClickHandler(mirror)} title="Layout">
                   <img src={mirrorT} alt=""/>
                 </a>
-                <span class="desktop-only">Layout</span>
+                <span className="desktop-only">Layout</span>
               </div>
               <div>
                 <a href="#gallery" onClick={this.getClickHandler(ring)} title="Ring">
                   <img src={ringT} alt=""/>
                 </a>
-                <span class="desktop-only">Ring</span>
+                <span className="desktop-only">Ring</span>
               </div>
               <div>
                 <a href="#gallery" onClick={this.getClickHandler(uppercut)}  title="Uppercut Bags">
                   <img src={uppercutT} alt=""/>
                 </a>
-                <span class="desktop-only">Uppercut Bags</span>
+                <span className="desktop-only">Uppercut Bags</span>
               </div>
               { bigImage && <img src={bigImage} className="bigImage" alt=""/> }
             </div>
