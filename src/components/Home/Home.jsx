@@ -8,6 +8,7 @@ import MailChimp from '../MailChimp/MailChimp.jsx';
 import React, { Component } from 'react';
 import Slideshow from '../Slideshow/Slideshow';
 import { Link } from 'react-router-dom';
+import OneSignalComponent from '../OneSignal/OneSignal';
 
 const freeWeekSrcBack = '/static/freePassBack.pdf';
 const freeWeekSrcFront = '/static/freePassFront.pdf';
@@ -46,6 +47,15 @@ class Home extends Component {
               <div className="head siteFont">Newsletter</div>
               <div className="body">
                 <MailChimp />
+              </div>
+            </div>
+            <div className="ad">
+              <div className="head siteFont">Notifications</div>
+              <div className="body">
+                <OneSignalComponent
+                  subscribeText="Subscribe to Push Notifications"
+                  unsubscribeText="Stop receiving Push Notifications"
+                />
               </div>
             </div>
             <div className="ad">

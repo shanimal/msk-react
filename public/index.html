@@ -6,12 +6,19 @@
     <meta name="theme-color" content="#000000">
     <meta property="og:url" content="http://mainstreetkickboxing.com" />
     <meta property="og:title" content="MSK Mainstreet Kickboxing" />
-    <meta property="og:image" content="http://mainstreetkickboxing.com/_img/logo_fb2.png" />
+    <meta property="og:image" content="http://mainstreetkickboxing.com/static/media/logo_fb2.png" />
     <meta property="og:description" content="At MSK you can train to get in shape with Core Training or become the best you can be in any of our fighting arts ranging from Muay Thai Kickboxing, Boxing, Jui Jitsu &amp; Wrestling. All classes are taught by well qualified trainers who carry expertise in all of these areas needed to get the best out of your body. If youre looking for group classes, private one-on-one training or if you want to train to compete, MSK has it all. Our full schedule allows you to fit the right class into your busy life at the the right time. Open daily, both morning and night, 6 days a week for men, women &amp; children." />
     <meta http-equiv="Keywords" content="MMA Core Training Kids, Adults, Seniors - Hollister, CA" />
-
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <!-- favicons thanks to realfavicongenerator.net -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/icons/apple-touch-icon.png?v=2bQaq8pYpY">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/icons/favicon-32x32.png?v=2bQaq8pYpY">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/icons/favicon-16x16.png?v=2bQaq8pYpY">
+    <link rel="manifest" href="/static/icons/site.webmanifest?v=2bQaq8pYpY">
+    <link rel="mask-icon" href="/static/icons/safari-pinned-tab.svg?v=2bQaq8pYpY" color="#000000">
+    <link rel="shortcut icon" href="/static/icons/favicon.ico?v=2bQaq8pYpY">
+    <meta name="msapplication-TileColor" content="#1c73e5">
+    <meta name="msapplication-config" content="/static/icons/browserconfig.xml?v=2bQaq8pYpY">
+    <meta name="theme-color" content="#1c73e5">
 
     <title>Mainstreet Kickboxing - MMA Core Training Kids, Adults, Seniors - Hollister, CA</title>
   </head>
@@ -20,7 +27,7 @@
       You need to enable JavaScript to run this app.
     </noscript>
     <div id="root"></div>
-
+    <!-- Google Analytics -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -28,6 +35,18 @@
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
       ga('create', 'UA-30559590-1', 'mainstreetkickboxing.com');
       ga('send', 'pageview');
+    </script>
+    <!-- OneSignal -->
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async='async'></script>
+    <script>
+      var OneSignal = window.OneSignal || [];
+      OneSignal.push(['init', {
+        appId: '16b0068d-c372-465f-bf19-1f3f0c8cd073',
+        autoRegister: false,
+        notifyButton: { enable: false },
+        path: '/static/oneSignal/',
+        // welcomeNotification: { title: 'My Custom Title', message: 'Thanks for subscribing!' }
+      }]);
     </script>
   </body>
 </html>

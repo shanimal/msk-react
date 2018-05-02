@@ -1,0 +1,14 @@
+{
+    "name": "MSK",
+    "short_name": "MSK",
+    "icons": [
+        {
+            "src": "/static/media/icons/android-chrome-192x192.png?v=2bQaq8pYpY",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#1c73e5",
+    "background_color": "#1c73e5",
+    "display": "standalone"
+}

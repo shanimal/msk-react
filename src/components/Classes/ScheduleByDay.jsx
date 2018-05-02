@@ -5,22 +5,19 @@ import './ScheduleByDay.css';
 class ScheduleByDay extends Component {
   constructor(props) {
     super(props);
-    this.renderGroup = this.renderGroup.bind(this);
-    this.renderIndex = this.renderIndex.bind(this);
-    this.renderItems = this.renderItems.bind(this);
   }
   render() {
     const sorted = getGroupSortedByDay();
     return (
       <div className="ScheduleByDay group sortedByDay">
         <div className="index">
-        {sorted.map(this.renderIndex)}
+        {sorted.map(ScheduleByDay.renderIndex)}
         </div>
-        {sorted.map(this.renderGroup)}
+        {sorted.map(ScheduleByDay.renderGroup)}
       </div>
     );
   }
-  renderGroup(group) {
+  static renderGroup(group) {
     if (!group) {
       return '';
     }
@@ -31,19 +28,19 @@ class ScheduleByDay extends Component {
         <div className="title linkGreen">
           {name}
         </div>
-        {group.map(this.renderItems)}
+        {group.map(ScheduleByDay.renderItems)}
       </div>
     );
   }
-  renderIndex(group) {
+  static renderIndex(group) {
     if (!group) {
       return '';
     }
     const abbr = group[0].day.name;
     const anchor = group[0].day.abbr.replace(' ', '');
-    return <a href={`#${anchor}`}>{abbr}</a>;
+    return <a key={abbr} href={`#${anchor}`}>{abbr}</a>;
   }
-  renderItems(item, index) {
+  static renderItems(item, index) {
     return (
       <div className="section" key={index}>
         <span className="col1">
