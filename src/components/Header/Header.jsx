@@ -1,7 +1,6 @@
 import './Header.css';
 import logo from './logo_opt.png';
 import Menu from '../Menu/Menu';
-import OneSignal from '../OneSignal/OneSignal';
 import React, { Component } from 'react';
 import Social from '../Social/Social';
 import { Link } from 'react-router-dom';
@@ -19,7 +18,6 @@ class Header extends Component {
         <div className="topper" />
         <Menu currentTab={currentTab} onChange={onMenuChange} />
         <Social />
-        <OneSignal />
       </header>
     );
   }

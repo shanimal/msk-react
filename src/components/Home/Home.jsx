@@ -8,7 +8,6 @@ import MailChimp from '../MailChimp/MailChimp.jsx';
 import React, { Component } from 'react';
 import Slideshow from '../Slideshow/Slideshow';
 import { Link } from 'react-router-dom';
-import OneSignalComponent from '../OneSignal/OneSignal';
 
 const freeWeekSrcBack = '/static/freePassBack.pdf';
 const freeWeekSrcFront = '/static/freePassFront.pdf';
@@ -50,15 +49,6 @@ class Home extends Component {
               </div>
             </div>
             <div className="ad">
-              <div className="head siteFont">Notifications</div>
-              <div className="body">
-                <OneSignalComponent
-                  subscribeText="Subscribe to Push Notifications"
-                  unsubscribeText="Stop receiving Push Notifications"
-                />
-              </div>
-            </div>
-            <div className="ad">
               <div className="head siteFont">Updates</div>
               <div className="body">
                 <a href="/classes#schedule">
@@ -72,7 +62,7 @@ class Home extends Component {
         <div className="bottom">
           <div className="blueBox left">
             <div className="title siteFont">Welcome to Main Street Kick Boxing</div>
-            <div>
+            <div className="ad">
               At MSK you can train to get in shape with <a href="/classes#ct">Core Fitness</a> or
               become the best you can be in any of our fighting arts ranging from
               <a href="/classes#mt">Muay Thai Kickboxing</a>, <a href="/classes#bx">Boxing</a>,
@@ -85,22 +75,14 @@ class Home extends Component {
               children.
             </div>
           </div>
-          <div className="right blueBox">
-            <div className="title siteFont">
-              <a target="_blank" href="_img/FREE-PASS-WB.pdf">
-                <span>One Week</span> FREE
-              </a>
-            </div>
-            <div>
-              <a target="_blank" href={freeWeekSrc}>
-                <img className="freeWeek" src={freeWeekImg} alt="Free Week"/></a>
-              <p>MSK currently offers a one week pass.</p>
-              <p>
-                <a target="_blank" href={freeWeekSrc}>
-                  Click Here to find out details
-                  <img src={Arrow} alt="" />
-                </a>
-              </p>
+          <div className="blueBox right">
+            <div className="title siteFont"><span>One Week</span> FREE</div>
+            <div className="ad" onClick={() => window.location.assign(freeWeekSrc)}>
+              <div className="content">
+                MSK is offering a one week pass. Click Here to find out details
+              </div>
+              <img className="arrow" src={Arrow} alt="" />
+              <img className="freeWeek" src={freeWeekImg} alt="Free Week"/>
             </div>
           </div>
         </div>

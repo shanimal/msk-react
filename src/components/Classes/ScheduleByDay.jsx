@@ -3,9 +3,6 @@ import { getGroupSortedByDay } from '../../services/siteData';
 import './ScheduleByDay.css';
 
 class ScheduleByDay extends Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     const sorted = getGroupSortedByDay();
     return (

@@ -15,8 +15,14 @@
       .right {
         margin: 1rem 0;
         flex: 0 0 215px;
+        .content {
+          width: 50%;
+          z-index: 2;
+        }
         img.freeWeek {
-          transform: translate(30px, -60px) rotate(45deg);
+          transform: translate(-40%, -100px) rotate(45deg);
+          float: right;
+          z-index: 1;
         }
       }
       .blueBox {
@@ -27,7 +33,6 @@
           background: #000;
           color: #999;
           padding: 10px;
-          img {}
           &:first-child {
             flex: 0 0 100px;
           }
@@ -35,6 +40,9 @@
         .title {
           background: rgba(12, 61, 143, 0.8);
           color: #aed40f;
+          span {
+            color: #f8f8ff;
+          }
         }
       }
     }
@@ -49,12 +57,6 @@
         background-size: cover;
       }
     }
-  }
-  .blueBox .title span {
-    color: #f8f8ff;
-  }
-  .bottom {
-
   }
   .top {
     .left {}
@@ -114,26 +116,6 @@
   }
 }
 
-@media only screen  and (min-width : 600px) {
-  .Home {
-    &.main {
-      .bottom {
-        display: flex;
-        flex-direction: row;
-        .blueBox {
-          display: flex;
-          margin: 0 0.5rem;
-        }
-        .right {
-          img.freeWeek {
-            transform: translate(-60px, 40px) scale(1.2) rotate(25deg);
-          }
-        }
-      }
-    }
-  }
-}
-
 @media only screen  and (min-width : 900px) {
   .Home {
     flex-direction: column;
@@ -143,21 +125,6 @@
       .bottom {
         margin: 1rem;
         flex-direction: row;
-        .left {
-          height: 200px;
-          left: 5px;
-          top: 585px;
-          width: 530px;
-        }
-        .right {
-          height: 200px;
-          left: 590px;
-          top: 585px;
-          margin: 0 0 0 1rem;
-          img.freeWeek {
-            transform: translate(20px, -57px) rotate(22deg);
-          }
-        }
         .blueBox {
           display: block;
           div {
@@ -168,6 +135,28 @@
           }
           .title {
             height: 25px;
+          }
+          &.left {
+            height: 200px;
+            left: 5px;
+            top: 585px;
+            width: 530px;
+          }
+          &.right {
+            height: 200px;
+            left: 590px;
+            top: 585px;
+            margin: 0 0 0 1rem;
+            .content {
+              z-index: 1;
+              width: 50%
+            }
+            img.arrow {
+              display: none;
+            }
+            img.freeWeek {
+              transform: translate(0px, -200px) rotate(45deg);
+            }
           }
         }
       }

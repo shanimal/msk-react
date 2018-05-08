@@ -4,10 +4,13 @@ import { withRouter } from 'react-router'
 import './Footer.css';
 
 class Footer extends Component {
+  scrollHome() {
+    window.scrollTo(0, 0);
+  }
   render() {
     return (
       <div className="Footer">
-        <a className="lefter" href="#" />
+        <div className="lefter" onClick={this.scrollHome} />
         <div className="map section">
           <label className="title siteFont">Site Map</label>
           <ul className="vertical_list">
