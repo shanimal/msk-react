@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import DavidScott from '../../_img/staff/david-scott.jpg';
-import DannyKelly from '../../_img/staff/danny-kelly.png';
+import DavidScott from '../../_img/staff/david-scott-sm.png';
+import DannyKelly from '../../_img/staff/danny-kelly-sm.png';
 import './Staff.css';
 
 class Page extends Component {

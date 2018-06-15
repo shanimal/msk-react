@@ -67,61 +67,117 @@ export const siteMap = [
 // 1 Monday, 2 Tuesday, 3 Wednesday, 4 Thursday, 5 Friday, 6 Saturday
 // mt: Muay Thai, sb: Submission MMA, bc: Bag Class, ko: Kids, ct: Core Training, sf: Super Seniors
 export const schedule = [
-
   // Monday / Wednesday
-  {d: 1, t: 1, s:16.0, c: "ko", desc: "Ages 7-12"},
-  {d: 3, t: 1, s:16.0, c: "ko", desc: "Ages 7-12"},
-  {d: 1, t: 0.5, s:17.0, c: "og", desc: ""         }, 
-  {d: 3, t: 0.5, s:17.0, c: "og", desc: ""         }, 
-  {d: 1, t: 1, s:17.5, c: "ct", desc: ""         }, 
-  {d: 3, t: 0.5, s:17.5, c: "br", desc: ""         }, 
-  {d: 3, t: 0.5, s:18, c: "br", desc: ""         }, 
-  {d: 1, t: 1, s:18.5, c: "mt", desc: "Advanced" },
-  {d: 1, t: 1, s:19.5, c: "bj", desc: ""         },
-  {d: 3, t: 1, s:19.5, c: "bj", desc: ""         },
+  {
+    d: 1, t: 1, s: 16.0, c: 'ko', desc: 'Ages 7-12',
+  },
+  {
+    d: 3, t: 1, s: 16.0, c: 'ko', desc: 'Ages 7-12',
+  },
+  {
+    d: 1, t: 0.5, s: 17.0, c: 'og', desc: '',
+  },
+  {
+    d: 3, t: 0.5, s: 17.0, c: 'og', desc: '',
+  },
+  {
+    d: 1, t: 1, s: 17.5, c: 'ct', desc: '',
+  },
+  {
+    d: 3, t: 0.5, s: 17.5, c: 'br', desc: '',
+  },
+  {
+    d: 3, t: 0.5, s: 18, c: 'br', desc: '',
+  },
+  {
+    d: 1, t: 1, s: 18.5, c: 'mt', desc: 'Advanced',
+  },
+  {
+    d: 1, t: 1, s: 19.5, c: 'bj', desc: '',
+  },
+  {
+    d: 3, t: 1, s: 19.5, c: 'bj', desc: '',
+  },
 
   // Tuesday / Thursday
-  {d: 2, t: 1, s:8.5, c: "bc", desc: ""        }, 
-  {d: 4, t: 1, s:8.5, c: "bc", desc: ""        }, 
-  {d: 2, t: 1, s:9.5, c: "ct", desc: ""        }, 
-  {d: 4, t: 1, s:9.5, c: "ct", desc: ""        }, 
-  {d: 2, t: 1, s:10.75, c: "sf", desc: ""        }, 
-  {d: 4, t: 1, s:10.75, c: "sf", desc: ""        }, 
-  {d: 2, t: 0.5, s:17, c: "og", desc: ""        }, 
-  {d: 4, t: 0.5, s:17, c: "og", desc: ""        }, 
-  {d: 2, t: 1, s:17.5, c: "ct", desc: ""        }, 
-  {d: 4, t: 1, s:17.5, c: "ct", desc: ""        }, 
-  {d: 2, t: 1, s:18.5, c: "mt", desc: ""        }, 
-  {d: 4, t: 1, s:18.5, c: "mt", desc: ""        }, 
-  {d: 2, t: 0.75, s:16, c: "ko", desc: "Ages 4-6" },
-  {d: 4, t: 0.75, s:16, c: "ko", desc: "Ages 4-6" },
+  {
+    d: 2, t: 1, s: 8.5, c: 'bc', desc: '',
+  },
+  {
+    d: 4, t: 1, s: 8.5, c: 'bc', desc: '',
+  },
+  {
+    d: 2, t: 1, s: 9.5, c: 'ct', desc: '',
+  },
+  {
+    d: 4, t: 1, s: 9.5, c: 'ct', desc: '',
+  },
+  {
+    d: 2, t: 1, s: 10.75, c: 'sf', desc: '',
+  },
+  {
+    d: 4, t: 1, s: 10.75, c: 'sf', desc: '',
+  },
+  {
+    d: 2, t: 0.5, s: 17, c: 'og', desc: '',
+  },
+  {
+    d: 4, t: 0.5, s: 17, c: 'og', desc: '',
+  },
+  {
+    d: 2, t: 1, s: 17.5, c: 'ct', desc: '',
+  },
+  {
+    d: 4, t: 1, s: 17.5, c: 'ct', desc: '',
+  },
+  {
+    d: 2, t: 1, s: 18.5, c: 'mt', desc: '',
+  },
+  {
+    d: 4, t: 1, s: 18.5, c: 'mt', desc: '',
+  },
+  {
+    d: 2, t: 0.75, s: 16, c: 'ko', desc: 'Ages 4-6',
+  },
+  {
+    d: 4, t: 0.75, s: 16, c: 'ko', desc: 'Ages 4-6',
+  },
 
   // Friday
-  {d: 5, t: 1, s:16, c: "ko", desc: "Ages 6-12"},
+  {
+    d: 5, t: 1, s: 16, c: 'ko', desc: 'Ages 6-12',
+  },
 
   // Saturday
-  {t: 1, s:9, c: "mt", desc: "", d: 6}, 
-  {t: 1, s:10, c: "ct", desc: "", d: 6}, 
-  {t: 2, s:10, c: "sp", desc: "", d: 6}, 
-  {t: 2, s:10, c: "bj", desc: "", d: 6}, 
-].sort((a, b) => {
-  return (
-    // check day
-    (a.d > b.d && 1) ||
-    (a.d < b.d && -1) ||
-    // check start time
-    (a.s > b.s && 1) ||
-    (a.s < b.s && -1) ||
-    // check end time (shorter classes first)
-    (a.t > b.t && 1) ||
-    (a.t < b.t && -1) ||
-    // check name
-    (a.c > b.c && 1) ||
-    (a.c < b.c && -1) ||
-    // no difference
-    0
-  )
-});
+  {
+    t: 1, s: 9, c: 'mt', desc: '', d: 6,
+  },
+  {
+    t: 1, s: 10, c: 'ct', desc: '', d: 6,
+  },
+  {
+    t: 2, s: 10, c: 'sp', desc: '', d: 6,
+  },
+  {
+    t: 2, s: 10, c: 'bj', desc: '', d: 6,
+  },
+].sort((a, b) => (
+  // check day
+  (a.d > b.d && 1) ||
+  (a.d < b.d && -1) ||
+  // check start time
+  (a.s > b.s && 1) ||
+  (a.s < b.s && -1) ||
+  // check end time (shorter classes first)
+  (a.t > b.t && 1) ||
+  (a.t < b.t && -1) ||
+  // check name
+  (a.c > b.c && 1) ||
+  (a.c < b.c && -1) ||
+  // no difference
+  0
+));
+
 
 export const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 export const shortDayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
