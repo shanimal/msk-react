@@ -38,146 +38,91 @@ export const classes = [
 ];
 
 export const instructors = [
-  //{id: "junior", type: "both", img: "/_img/staff/junior.jpg", name: '"Junior"', bio: "Jr. was eight years old when he realized sports were something he was good at. That is when he started wrestling and he took it all the way to high school. He also played football. After wrestling and playing football for three years at San Benito high, he went on to play football at Gavilan College for one year. He now trains at Main Street Kickboxing and has been there since the opening. Six years later Jr. has put together a pretty impressive record in both Muay Thai Kickboxing and MMA. At 9-1 combined record he is considered a top amateur. Currently Jr. teaches the kids program here at Main Street Kickboxing."}, 
+  //{id: "junior", type: "both", img: "/_img/staff/junior.jpg", name: '"Junior"', bio: "Jr. was eight years old when he realized sports were something he was good at. That is when he started wrestling and he took it all the way to high school. He also played football. After wrestling and playing football for three years at San Benito high, he went on to play football at Gavilan College for one year. He now trains at Main Street Kickboxing and has been there since the opening. Six years later Jr. has put together a pretty impressive record in both Muay Thai Kickboxing and MMA. At 9-1 combined record he is considered a top amateur. Currently Jr. teaches the kids program here at Main Street Kickboxing."},
   //{id: "jaredh", type: "fighter", img: "/_img/staff/jared-hess.jpg", name: "Jared Hess", bio: "Grew up in the small town of Wells located in North Eastern Nevada. Jared excelled in football and wrestling from a young age which carried threw his last year of high school. Jared was apart of a both a wrestling and football team that won titles his senior year. Out of high school he moved for work reasons, to the central coast to pursue the trade of a electrical lineman. Within a couple of months Jared took up MMA. Five years later he compiled a record of 10-2 and earned a blue belt in bjj with a number of grappling tournament medals to show for it. Most impressive was his run for cammos state title where he finished second only to lose to the infamous bill the grill cooper. Now Jared is taking the next step as a professional fighter. With his life under full control and big plans in his sites Jared is ready for just about anything. You made his pro debut on the December 10th at the Impact MMA Card in Pleasanton, CA."}
 ];
 
 export const links = [
-  {n: "Google", u: "https: //goo.gl/4iJzfm", t: "_blank"}, 
-  {n: "Facebook", u: "https: //www.facebook.com/MSK-Main-Street-Kickboxing-121595357867256/", t: "_blank"}, 
-  {n: "YouTube", u: "http: //www.youtube.com/user/mainstreetkickboxing", t: "_blank"}, 
+  {n: "Google", u: "https: //goo.gl/4iJzfm", t: "_blank"},
+  {n: "Facebook", u: "https: //www.facebook.com/MSK-Main-Street-Kickboxing-121595357867256/", t: "_blank"},
+  {n: "YouTube", u: "http: //www.youtube.com/user/mainstreetkickboxing", t: "_blank"},
   {n: "Twitter", u: "https: //twitter.com/MSKtrainer", t: "_blank"}
   //{n: "Pinterest", u: "http: /pinterest.com", t: "_blank"}
 ];
 
 export const siteMap = [
-  {n: "Schedule", u: "/classes"}, 
-  {n: "Classes", u: "/classes#class_info"}, 
-  {n: "Contact", u: "/contact"}, 
-  {n: "Facility", u: "/facility"}, 
-  //{n: "Fighters", u: "/instructors#Fighters"}, 
-  {n: "Map", u: "/contact"}, 
-  {n: "Home", u: "/"}, 
-  //{n: "Instructors", u: "/instructors"}, 
+  {n: "Schedule", u: "/classes"},
+  {n: "Classes", u: "/classes#class_info"},
+  {n: "Contact", u: "/contact"},
+  {n: "Facility", u: "/facility"},
+  //{n: "Fighters", u: "/instructors#Fighters"},
+  {n: "Map", u: "/contact"},
+  {n: "Home", u: "/"},
+  //{n: "Instructors", u: "/instructors"},
   {n: "News", u: "/fbnews"}
-  //{n: "YouTube", u: "http: //www.youtube.com/user/mainstreetkickboxing", t: "_blank"}, 
+  //{n: "YouTube", u: "http: //www.youtube.com/user/mainstreetkickboxing", t: "_blank"},
   //{n: "Facebook", u: "http: //www.facebook.com/pages/Main-Street-Kickboxing-Hollister-Ca/121595357867256", t: "_blank"}
 ];
 
-// 1 Monday, 2 Tuesday, 3 Wednesday, 4 Thursday, 5 Friday, 6 Saturday
-// mt: Muay Thai, sb: Submission MMA, bc: Bag Class, ko: Kids, ct: Core Training, sf: Super Seniors
+// Schedule
+// d: day of week (1 Monday, 2 Tuesday, 3 Wednesday, 4 Thursday, 5 Friday, 6 Saturday)
+// t: duration of class in decimal hours  (examples: 1hr=1.0, 45min=0.75)
+// s: start time in decimal hour of day  (examples: 12:30p=12.5, 5:15p=17.25)
+// c: class id (mt: Muay Thai, sb: Submission MMA, bc: Bag Class...)
+// desc: schedule specifics info
 export const schedule = [
-  // Monday / Wednesday
-  {
-    d: 1, t: 1, s: 16.0, c: 'ko', desc: 'Ages 7-12',
-  },
-  {
-    d: 3, t: 1, s: 16.0, c: 'ko', desc: 'Ages 7-12',
-  },
-  {
-    d: 1, t: 0.5, s: 17.0, c: 'og', desc: '',
-  },
-  {
-    d: 3, t: 0.5, s: 17.0, c: 'og', desc: '',
-  },
-  {
-    d: 1, t: 1, s: 17.5, c: 'ct', desc: '',
-  },
-  {
-    d: 3, t: 0.5, s: 17.5, c: 'br', desc: '',
-  },
-  {
-    d: 3, t: 0.5, s: 18, c: 'br', desc: '',
-  },
-  {
-    d: 1, t: 1, s: 18.5, c: 'mt', desc: 'Advanced',
-  },
-  {
-    d: 1, t: 1, s: 19.5, c: 'bj', desc: '',
-  },
-  {
-    d: 3, t: 1, s: 19.5, c: 'bj', desc: '',
-  },
+           // Monday / Wednesday
+           { d: 3, t: 1, s: 10.0, c: 'ko', desc: 'Age 7-12, Summer Schedule †' },
+           { d: 1, t: 1, s: 10.0, c: 'ko', desc: 'Age 7-12, Summer Schedule †' },
+           { d: 1, t: 0.5, s: 17.0, c: 'og', desc: '' },
+           { d: 3, t: 0.5, s: 17.0, c: 'og', desc: '' },
+           { d: 1, t: 1, s: 17.5, c: 'ct', desc: '' },
+           { d: 3, t: 0.5, s: 17.5, c: 'br', desc: '' },
+           { d: 3, t: 0.5, s: 18, c: 'br', desc: '' },
+           { d: 1, t: 1, s: 18.5, c: 'mt', desc: 'Advanced' },
+           { d: 1, t: 1, s: 19.5, c: 'bj', desc: '' },
+           { d: 3, t: 1, s: 19.5, c: 'bj', desc: '' },
+           // Tuesday / Thursday
+           { d: 2, t: 1, s: 8.5, c: 'bc', desc: '' },
+           { d: 4, t: 1, s: 8.5, c: 'bc', desc: '' },
+           { d: 2, t: 1, s: 9.5, c: 'ct', desc: '' },
+           { d: 4, t: 1, s: 9.5, c: 'ct', desc: '' },
+           { d: 2, t: 1, s: 10.75, c: 'sf', desc: '' },
+           { d: 4, t: 1, s: 10.75, c: 'sf', desc: '' },
+           { d: 2, t: 0.5, s: 17, c: 'og', desc: '' },
+           { d: 4, t: 0.5, s: 17, c: 'og', desc: '' },
+           { d: 2, t: 1, s: 17.5, c: 'ct', desc: '' },
+           { d: 4, t: 1, s: 17.5, c: 'ct', desc: '' },
+           { d: 2, t: 1, s: 18.5, c: 'mt', desc: '' },
+           { d: 4, t: 1, s: 18.5, c: 'mt', desc: '' },
+           { d: 2, t: 0.75, s: 10, c: 'ko', desc: 'Age 4-6, Summer Schedule †' },
+           { d: 4, t: 0.75, s: 10, c: 'ko', desc: 'Age 4-6, Summer Schedule †' },
+           // Friday
+           { d: 5, t: 1, s: 10, c: 'ko', desc: 'Age 7-12, Summer Schedule †' },
+           // Saturday
+           { d: 6, t: 1, s: 9, c: 'mt', desc: '' },
+           { d: 6, t: 1, s: 10, c: 'ct', desc: '' },
+           { d: 6, t: 2, s: 10, c: 'sp', desc: '' },
+           { d: 6, t: 2, s: 10, c: 'bj', desc: '' }
+       ].sort(
+           (a, b) =>
+               // check day
+               (a.d > b.d && 1) ||
+               (a.d < b.d && -1) ||
+               // check start time
+               (a.s > b.s && 1) ||
+               (a.s < b.s && -1) ||
+               // check end time (shorter classes first)
+               (a.t > b.t && 1) ||
+               (a.t < b.t && -1) ||
+               // check name
+               (a.c > b.c && 1) ||
+               (a.c < b.c && -1) ||
+               // no difference
+               0
+       );
 
-  // Tuesday / Thursday
-  {
-    d: 2, t: 1, s: 8.5, c: 'bc', desc: '',
-  },
-  {
-    d: 4, t: 1, s: 8.5, c: 'bc', desc: '',
-  },
-  {
-    d: 2, t: 1, s: 9.5, c: 'ct', desc: '',
-  },
-  {
-    d: 4, t: 1, s: 9.5, c: 'ct', desc: '',
-  },
-  {
-    d: 2, t: 1, s: 10.75, c: 'sf', desc: '',
-  },
-  {
-    d: 4, t: 1, s: 10.75, c: 'sf', desc: '',
-  },
-  {
-    d: 2, t: 0.5, s: 17, c: 'og', desc: '',
-  },
-  {
-    d: 4, t: 0.5, s: 17, c: 'og', desc: '',
-  },
-  {
-    d: 2, t: 1, s: 17.5, c: 'ct', desc: '',
-  },
-  {
-    d: 4, t: 1, s: 17.5, c: 'ct', desc: '',
-  },
-  {
-    d: 2, t: 1, s: 18.5, c: 'mt', desc: '',
-  },
-  {
-    d: 4, t: 1, s: 18.5, c: 'mt', desc: '',
-  },
-  {
-    d: 2, t: 0.75, s: 16, c: 'ko', desc: 'Ages 4-6',
-  },
-  {
-    d: 4, t: 0.75, s: 16, c: 'ko', desc: 'Ages 4-6',
-  },
-
-  // Friday
-  {
-    d: 5, t: 1, s: 16, c: 'ko', desc: 'Ages 6-12',
-  },
-
-  // Saturday
-  {
-    t: 1, s: 9, c: 'mt', desc: '', d: 6,
-  },
-  {
-    t: 1, s: 10, c: 'ct', desc: '', d: 6,
-  },
-  {
-    t: 2, s: 10, c: 'sp', desc: '', d: 6,
-  },
-  {
-    t: 2, s: 10, c: 'bj', desc: '', d: 6,
-  },
-].sort((a, b) => (
-  // check day
-  (a.d > b.d && 1) ||
-  (a.d < b.d && -1) ||
-  // check start time
-  (a.s > b.s && 1) ||
-  (a.s < b.s && -1) ||
-  // check end time (shorter classes first)
-  (a.t > b.t && 1) ||
-  (a.t < b.t && -1) ||
-  // check name
-  (a.c > b.c && 1) ||
-  (a.c < b.c && -1) ||
-  // no difference
-  0
-));
-
+export const scheduleNote = '† Kids Kickboxing moved to 10am for Summer (thru Aug 10)';
 
 export const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 export const shortDayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
@@ -191,18 +136,22 @@ export const siteData = {
   schedule,
 };
 
-const WEEK = 604800000;
+var DAY_MINS = 24 * 60;
+var WEEK_MINS = 7 * DAY_MINS;
+var DAYS = Array(7)
+    .fill()
+    .map((e, i) => i * DAY_MINS);
+
+var now = new Date();
+var currentMins =
+    now.getDay() * DAY_MINS + now.getHours() * 60 + now.getMinutes() - 5;
 
 function diffClassTime(c) {
-  const d = new Date();
-  const nowDay = d.getDay();
-  const nowHr = d.getHours();
-  const day = c.d;
-  const hr = c.s;
-  const days = nowDay > day ? day + 7 - nowDay : day - nowDay;
-  const hours = days === 0 && nowHr > hr ? hr + WEEK - nowHr : hr - nowHr;
-
-  return (days * 24) + hours;
+    let classMins = DAYS[c.d] + c.s * 60;
+    if (currentMins > classMins) {
+        classMins += WEEK_MINS;
+    }
+    return classMins - currentMins;
 }
 
 function classDayInfo(next) {

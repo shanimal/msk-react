@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ScheduleByDay from './ScheduleByDay';
 import ScheduleByName from './ScheduleByTitle';
 import ScheduleByTime from './ScheduleByTime';
+import { scheduleNote } from '../../services/siteData';
 import './Schedule.css';
 
 const sorts = [
@@ -28,6 +29,7 @@ class Schedule extends Component {
         <div className="middle">
           <a name="top" id="schedule"> </a>
           <h2 className="primary">Schedule</h2>
+          <div className="desc">{scheduleNote}</div>
           <div className="scheduleSort sortedByDay">
             {sorts.reduce((accu, sort, index) => {
               accu.push(

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Contact.css';
+import map from './maps.png';
 
 class Page extends Component {
   render() {
@@ -27,9 +28,10 @@ class Page extends Component {
                     alt="View on maps"
                     title="Click to view larger map"
                     className="gmap"
-                    src="http://maps.google.com/maps/api/staticmap?center=36.84753615757422,-121.39131474501482&amp;zoom=16&amp;markers=icon:http%3A%2F%2Fmsk.shanimal.com%2F_img%2Flogo_map.png%3F4|36.84753615757422,-121.39131474501482&amp;size=500x500&amp;sensor=false"
+                    src={map}
                   />
                 </a>
+
               </div>
               <div className="mapLinks">
                 <a className="largeMap" target="_blank" href="http://goo.gl/maps/ohvjr" rel="noopener noreferrer">

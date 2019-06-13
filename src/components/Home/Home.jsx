@@ -52,8 +52,12 @@ class Home extends Component {
               <div className="head siteFont">Updates</div>
               <div className="body">
                 <a href="/classes#schedule">
-                  <h3 className="secondary siteFont">New! BJJ!!!<br/>Brazilian<br/>Jiu-Jitsu</h3>
+                  <h3 className="secondary siteFont">Brazilian<br />Jiu-Jitsu</h3>
                   <img src={ClassesLeft} width="185" alt="Saturday Submission Class" />
+                </a>
+                <a href="/classes#KidsKickboxing">
+                    <h3 className="secondary siteFont">Kids Kickboxing Summer Schedule in effect! </h3>
+                    <br/>more info
                 </a>
               </div>
             </div>
